@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --header-h: 5rem;
+  --header-h: 3.75rem;
   --chrome-h: 7rem;
   --pine: #18241e;
   --pine-deep: #0c1310;
@@ -23,6 +23,12 @@
   --ground: var(--paper);
   --panel: var(--parchment-deep);
   --accent: var(--moss);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 5rem;
+  }
 }
 
 .on-light {
@@ -460,6 +466,10 @@ dd {
 /* Headline words rise through a mask */
 .words {
   display: block;
+}
+
+.words.words-inline {
+  display: inline;
 }
 
 .word {

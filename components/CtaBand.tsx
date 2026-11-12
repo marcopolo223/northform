@@ -10,7 +10,7 @@ export function CtaBand() {
 
   return (
     <section className="on-dark overflow-hidden bg-ground">
-      <Container className="grid items-end gap-12 py-16 lg:grid-cols-12 lg:gap-8 lg:py-24">
+      <Container className="grid items-end gap-12 py-12 sm:py-16 lg:grid-cols-12 lg:gap-8 lg:py-24">
         <div className="scale-in origin-left lg:col-span-8">
           <h2 className="type-display max-w-[12ch] text-fg">
             <RevealWords text={t.cta.title} />

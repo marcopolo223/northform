@@ -22,11 +22,11 @@ export function PageHeader({
 }) {
   return (
     <section className="on-light bg-ground">
-      <Container className="pb-12 pt-[calc(var(--chrome-h,7rem)+3.25rem)] lg:pb-16 lg:pt-[calc(var(--chrome-h,7rem)+5rem)]">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-8">
+      <Container className="pb-8 pt-[calc(var(--chrome-h,7rem)+1.75rem)] sm:pb-12 sm:pt-[calc(var(--chrome-h,7rem)+3.25rem)] lg:pb-16 lg:pt-[calc(var(--chrome-h,7rem)+5rem)]">
+        <div className="grid gap-5 sm:gap-10 lg:grid-cols-12 lg:items-end lg:gap-8">
           <div className="lg:col-span-8">
             {eyebrow ? <p className="type-kicker eyebrow page-header-copy text-accent">{eyebrow}</p> : null}
-            <h1 className={cn("type-page max-w-[14ch]", eyebrow && "mt-6")}>
+            <h1 className={cn("type-page max-w-[14ch]", eyebrow && "mt-4 sm:mt-6")}>
               <SplitWords text={title} />
             </h1>
           </div>
@@ -40,7 +40,7 @@ export function PageHeader({
       </Container>
       {image ? (
         <Container>
-          <Reveal variant="media" className="relative aspect-[5/4] overflow-hidden sm:aspect-[16/8]">
+          <Reveal variant="media" className="relative aspect-[16/10] overflow-hidden sm:aspect-[16/8]">
             <FrameImage
               src={image}
               alt={imageAlt}

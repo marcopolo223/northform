@@ -115,7 +115,7 @@ export function CancellationPolicy() {
       <p className="mt-3 max-w-2xl text-fg/70">{copy.intro}</p>
       <dl className="mt-6 grid gap-px border border-fg/15 bg-fg/15 sm:grid-cols-2 lg:grid-cols-4">
         {copy.items.map((item) => (
-          <div key={item.title} className="bg-ground p-6">
+          <div key={item.title} className="bg-ground p-5 sm:p-6">
             <dt className="font-serif text-[1.15rem] leading-snug tracking-[-0.015em]">{item.title}</dt>
             <dd className="mt-3 text-[0.93rem] leading-relaxed text-fg/75">{item.body}</dd>
           </div>

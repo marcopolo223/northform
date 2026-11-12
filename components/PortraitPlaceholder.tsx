@@ -7,7 +7,7 @@ import { site } from "@/site.config";
 /** Mitch's portrait. Studio grey is kept; the frame is paper-cut, not rounded. */
 export function PortraitPlaceholder({ className, priority = false }: { className?: string; priority?: boolean }) {
   return (
-    <figure className={cn("relative aspect-[3/4] w-full overflow-hidden bg-[#4a4a4b]", className)}>
+    <figure className={cn("relative w-full overflow-hidden bg-[#4a4a4b]", className ?? "aspect-[3/4]")}>
       <Image
         src="/images/mitch-corbet.jpg"
         alt={`${site.provider.name}, ${site.provider.credentials}`}

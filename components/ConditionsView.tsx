@@ -14,9 +14,9 @@ export function ConditionsView() {
   return (
     <>
       <LocalizedHeader section="conditions" />
-      <Container className="py-14 lg:py-20">
+      <Container className="py-8 sm:py-14 lg:py-20">
         <ConditionCards items={conditions} />
-        <div className="mt-14 flex flex-col gap-8 border-t border-fg/15 pt-10 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-6 border-t border-fg/15 pt-8 sm:mt-14 sm:gap-8 sm:pt-10 sm:flex-row sm:items-center sm:justify-between">
           <TextLink href="/#treat">{t.conditions.treatLink}</TextLink>
           <BecomePatientButton />
         </div>

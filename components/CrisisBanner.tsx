@@ -34,8 +34,8 @@ export function CrisisBanner() {
 
   return (
     <div role="region" aria-label={t.banner.aria} className="on-dark border-b border-fg/10 bg-ground">
-      <div className="relative mx-auto flex max-w-[1400px] items-center justify-center px-12 sm:px-14">
-        <p className="min-w-0 py-1.5 text-center text-[0.8rem] leading-snug text-fg/85 sm:text-[0.84rem]">
+      <div className="relative mx-auto flex max-w-[1400px] items-center justify-center px-10 sm:px-14">
+        <p className="min-w-0 py-1 text-center text-[0.72rem] leading-tight text-fg/85 sm:py-1.5 sm:text-[0.84rem] sm:leading-snug">
           <span className="font-medium text-fg">{t.banner.emergency}: </span>
           <a className="link-u is-ruled -my-2 inline-block px-1.5 py-2 font-medium" href={`tel:${site.crisis.emergency}`}>
             {site.crisis.emergency}
@@ -44,15 +44,15 @@ export function CrisisBanner() {
             ·
           </span>
           {t.banner.crisisBefore}
-          <a className="link-u is-ruled -my-2 inline-block px-1.5 py-2 font-medium" href={`tel:${site.crisis.line}`}>
+          <span className="whitespace-nowrap"><a className="link-u is-ruled -my-2 inline-block px-1.5 py-2 font-medium" href={`tel:${site.crisis.line}`}>
             {site.crisis.line}
           </a>
-          {t.banner.crisisAfter}
+          {t.banner.crisisAfter}</span>
         </p>
         <button
           type="button"
           onClick={dismiss}
-          className="type-ui absolute right-2 top-1/2 flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center text-fg/70 hover:text-fg sm:right-5"
+          className="type-ui absolute right-0 top-1/2 flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center text-fg/70 hover:text-fg sm:right-5"
           aria-label={t.banner.dismiss}
         >
           <span aria-hidden className="text-lg leading-none">

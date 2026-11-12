@@ -21,7 +21,7 @@ export function BillingIntro() {
           <Reveal
             key={rate.label}
             delay={index * 90}
-            className={index > 0 ? "border-t border-fg/20 py-10 sm:border-l sm:border-t-0 sm:pl-10" : "py-10 sm:pr-10"}
+            className={index > 0 ? "border-t border-fg/20 py-6 sm:border-l sm:border-t-0 sm:py-10 sm:pl-10" : "py-6 sm:py-10 sm:pr-10"}
           >
             <p className="type-kicker text-fg/60">{rate.label}</p>
             <p className="type-stat mt-6">
@@ -32,7 +32,7 @@ export function BillingIntro() {
           </Reveal>
         ))}
       </div>
-      <div className="mt-10 flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-6 flex flex-col gap-6 sm:mt-10 sm:gap-8 sm:flex-row sm:items-center sm:justify-between">
         <p className="max-w-2xl text-fg/80">{t.billing.fitCall}</p>
         <ButtonLink href="/start" className="shrink-0">
           {t.nav.become}

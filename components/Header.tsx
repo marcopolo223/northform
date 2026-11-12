@@ -107,7 +107,6 @@ export function Header() {
   }, [open]);
 
   const overHero = heroInView && !open;
-  const showMobileCta = pathname !== "/start" && !open;
 
   const labelFor = (href: string, fallback: string) => {
     const key = navKeyByHref[href];
@@ -117,6 +116,7 @@ export function Header() {
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
+    <>
     <header
       ref={headerRef}
       style={{ viewTransitionName: "site-header" }}
@@ -212,6 +212,9 @@ export function Header() {
         aria-hidden
       />
 
+
+    </header>
+
       {open ? (
         <nav
           id="mobile-nav"
@@ -276,15 +279,6 @@ export function Header() {
           </div>
         </nav>
       ) : null}
-
-      {showMobileCta ? (
-        <div className="on-dark fixed inset-x-0 bottom-0 z-40 border-t border-fg/10 bg-ground/95 px-5 py-3 backdrop-blur-md lg:hidden">
-          <Link href="/start" className="type-ui flex min-h-11 items-center justify-between bg-fg px-5 text-ground">
-            {t.nav.become}
-            <span aria-hidden>→</span>
-          </Link>
-        </div>
-      ) : null}
-    </header>
+    </>
   );
 }

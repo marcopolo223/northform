@@ -19,7 +19,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="on-dark border-t border-fg/10 bg-ground pb-24 lg:pb-0">
+    <footer className="on-dark border-t border-fg/10 bg-ground">
       <Container className="grid gap-14 pb-14 pt-20 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8 lg:pt-24">
         <div className="sm:col-span-2 lg:col-span-5">
           <p className="type-mark text-[clamp(2.6rem,5vw,4rem)] leading-none text-fg">{site.name}</p>

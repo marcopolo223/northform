@@ -48,7 +48,7 @@ export function ContactView() {
     <>
       <LocalizedHeader section="contact" />
 
-      <Container className="grid gap-16 py-14 lg:grid-cols-12 lg:gap-8 lg:py-24">
+      <Container className="grid gap-10 py-8 sm:gap-16 sm:py-14 lg:grid-cols-12 lg:gap-8 lg:py-24">
         <div className="lg:col-span-7">
           <Reveal>
             <p className="type-kicker text-fg/60">{t.contact.email}</p>

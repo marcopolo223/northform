@@ -21,7 +21,7 @@ export function InsightsView() {
         image="/images/spokane-bridge.jpg"
         imageAlt="The swinging bridge over the Spokane River at Riverside State Park"
       />
-      <Container className="py-16 lg:py-24">
+      <Container className="py-10 sm:py-16 lg:py-24">
         <div className="grid gap-x-10 md:grid-cols-3">
           {t.insights.hubs.map((item, index) => (
             <Reveal key={hubHrefs[index]} variant="rule" delay={index * 80}>
@@ -35,7 +35,7 @@ export function InsightsView() {
           ))}
         </div>
 
-        <section className="mt-16 grid gap-8 lg:mt-24 lg:grid-cols-12">
+        <section className="mt-12 grid gap-8 sm:mt-16 lg:mt-24 lg:grid-cols-12">
           <h2 className="type-kicker eyebrow text-accent lg:col-span-4">{t.insights.fmla}</h2>
           <ul className="list-none border-t border-fg/20 lg:col-span-8">
             {articles.map((article) => {

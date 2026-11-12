@@ -12,7 +12,7 @@ export function TelehealthView() {
   return (
     <>
       <LocalizedHeader section="telehealth" />
-      <Container className="grid py-16 lg:grid-cols-12 lg:py-28">
+      <Container className="grid py-10 sm:py-16 lg:grid-cols-12 lg:py-28">
         <div className="space-y-8 lg:col-span-7 lg:col-start-5">
           <Reveal>
             <p className="type-statement">{t.telehealth.p1}</p>
