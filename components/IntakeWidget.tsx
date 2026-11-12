@@ -56,7 +56,7 @@ export function IntakeWidget({ mode }: { mode: "intake" | "portal" }) {
   }, [mode]);
 
   return (
-    <div className={`relative border border-fg/20 bg-white ${mode === "portal" ? "min-h-[22rem]" : "min-h-[34rem]"}`}>
+    <div className={`relative border-y border-fg/20 bg-ground sm:border ${mode === "portal" ? "min-h-[22rem]" : "min-h-[34rem]"}`}>
       {!ready ? (
         <div className="absolute inset-0 flex items-center justify-center px-6 text-center" aria-live="polite">
           <p className="type-meta flex items-center gap-3 text-[#4a5c50]">
@@ -68,7 +68,7 @@ export function IntakeWidget({ mode }: { mode: "intake" | "portal" }) {
           </p>
         </div>
       ) : null}
-      <div id="intakeq" ref={mountRef} className="relative w-full [&_iframe]:block [&_iframe]:w-full [&_iframe]:border-0" />
+      <div id="intakeq" ref={mountRef} className="relative w-full [&_iframe]:block [&_iframe]:w-full [&_iframe]:bg-transparent [&_iframe]:border-0" />
     </div>
   );
 }
