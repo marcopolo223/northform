@@ -1,19 +1,41 @@
 "use client";
 
-import Link from "next/link";
-import { ButtonLink } from "@/components/ButtonLink";
+import { ButtonLink, TextLink } from "@/components/ButtonLink";
 import { CtaBand } from "@/components/CtaBand";
-import { FrameImage } from "@/components/FrameImage";
 import { HomeHero } from "@/components/HomeHero";
 import { PlanSection } from "@/components/PlanSection";
+import { PortraitPlaceholder } from "@/components/PortraitPlaceholder";
 import { Reveal } from "@/components/Reveal";
+import { RevealWords } from "@/components/RevealWords";
+import { ScrollWords } from "@/components/ScrollWords";
 import { TreatGrid } from "@/components/TreatGrid";
 import { useLocale } from "@/lib/i18n/locale-provider";
-import { photos } from "@/lib/photos";
+import { stripArrow } from "@/lib/text";
 import { site } from "@/site.config";
 
 export function HomeView() {
   const { t } = useLocale();
+
+  const practical = [
+    {
+      title: t.home.firstVisitTitle,
+      body: t.home.firstVisitBody,
+      links: [
+        { href: "/start", label: t.home.whatToExpect },
+        { href: "/approach", label: t.home.theApproach },
+      ],
+    },
+    {
+      title: t.home.cashTitle,
+      body: t.home.cashBody,
+      links: [{ href: "/billing", label: t.home.rates }],
+    },
+    {
+      title: t.nav.telehealth,
+      body: t.home.telehealthBand,
+      links: [{ href: "/telehealth", label: stripArrow(t.home.telehealthLink) }],
+    },
+  ];
 
   return (
     <>
@@ -21,96 +43,66 @@ export function HomeView() {
 
       <PlanSection />
 
-      <section id="treat" className="bg-pine-deep pb-20 text-parchment sm:pb-24">
-        <div className="mx-auto max-w-[1400px] px-5 pt-16 sm:px-8 lg:pt-24">
-          <Reveal>
-            <h2 className="type-title max-w-2xl">
-              {t.treat.titleBefore} <span className="type-mark">{t.treat.titleMark}</span>.
+      <section id="treat" className="on-light border-t border-fg/15 bg-ground">
+        <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-16 sm:px-8 lg:grid-cols-12 lg:gap-8 lg:py-24">
+          <Reveal className="lg:col-span-4">
+            <p className="type-kicker eyebrow text-accent">{t.nav.care}</p>
+            <h2 className="type-title mt-5">
+              <RevealWords text={t.treat.titleBefore} />{" "}
+              <span className="type-mark">
+                <RevealWords text={t.treat.titleMark} delay={3} />
+              </span>
+              .
             </h2>
-            <p className="mt-4 max-w-xl text-parchment/85">{t.treat.intro}</p>
+            <p className="mt-5 max-w-xs text-fg/72">{t.treat.intro}</p>
+            <p className="mt-6">
+              <TextLink href="/conditions">{t.treat.named}</TextLink>
+            </p>
           </Reveal>
-          <div className="mt-10">
+          <Reveal className="lg:col-span-8" delay={100}>
             <TreatGrid />
-          </div>
-          <p className="mt-8">
-            <Link
-              href="/conditions"
-              className="type-ui text-parchment/80 underline-offset-4 transition-colors hover:text-parchment hover:underline"
-            >
-              {t.treat.named}
-            </Link>
-          </p>
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden">
-        <FrameImage
-          src={photos.pines.src}
-          alt={photos.pines.alt}
-          className="min-h-[420px] lg:min-h-[560px]"
-          sizes="100vw"
-          share
-          parallax
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-pine-deep via-pine-deep/70 to-pine-deep/25" aria-hidden />
-        <div className="absolute inset-0 flex items-center">
-          <Reveal className="relative z-10 max-w-xl px-5 py-16 sm:px-8 lg:ml-[8%] lg:px-0">
-            <h2 className="type-title text-parchment">{site.provider.full}</h2>
-            <p className="type-lede mt-5 text-parchment/85">{t.home.providerLede}</p>
-            <div className="mt-8">
-              <ButtonLink href="/about" variant="light">
-                {t.home.aboutMitchell}
-              </ButtonLink>
-            </div>
           </Reveal>
         </div>
       </section>
 
-      <section id="first-visit" className="border-b border-parchment/10 bg-pine-deep text-parchment">
-        <Reveal className="mx-auto max-w-[1400px] px-5 py-16 sm:px-8 lg:py-20">
-          <h2 className="type-title max-w-2xl">{t.home.firstVisitTitle}</h2>
-          <p className="mt-4 max-w-lg text-parchment/85">{t.home.firstVisitBody}</p>
-          <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
-            <ButtonLink href="/start" variant="light">
-              {t.home.whatToExpect}
-            </ButtonLink>
-            <Link
-              href="/approach"
-              className="type-ui text-parchment/80 underline-offset-4 transition-colors hover:text-parchment hover:underline"
-            >
-              {t.home.theApproach}
-            </Link>
+      <section className="on-dark overflow-hidden bg-ground">
+        <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-12 lg:gap-8 lg:py-24">
+          <div className="lg:col-span-7 lg:pr-12">
+            <Reveal>
+              <p className="type-kicker eyebrow text-accent">{t.nav.about}</p>
+            </Reveal>
+            <h2 className="type-title mt-5 text-[clamp(2.2rem,4.4vw,3.8rem)]">
+              <RevealWords text={site.provider.name} />
+            </h2>
+            <p className="type-voice mt-2 text-fg/60">{site.provider.credentials}</p>
+            <p className="type-statement mt-8 max-w-xl text-[clamp(1.3rem,2vw,1.75rem)] text-fg">
+              <ScrollWords text={t.home.providerLede} />
+            </p>
+            <Reveal className="mt-8" delay={120}>
+              <ButtonLink href="/about">{t.home.aboutMitch}</ButtonLink>
+            </Reveal>
           </div>
-        </Reveal>
+          <Reveal variant="media" className="relative max-w-sm lg:col-span-4 lg:col-start-9 lg:max-w-none">
+            <PortraitPlaceholder />
+          </Reveal>
+        </div>
       </section>
 
-      <section className="border-b border-parchment/15 bg-pine text-parchment">
-        <Reveal className="mx-auto max-w-[1400px] px-5 py-14 sm:px-8 lg:py-16">
-          <h2 className="type-title max-w-2xl">{t.home.cashTitle}</h2>
-          <p className="mt-4 max-w-lg text-parchment/85">{t.home.cashBody}</p>
-          <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
-            <ButtonLink href="/start" variant="light">
-              {t.nav.become}
-            </ButtonLink>
-            <Link
-              href="/billing"
-              className="type-ui text-parchment/80 underline-offset-4 transition-colors duration-300 hover:text-parchment hover:underline"
-            >
-              {t.home.rates}
-            </Link>
-          </div>
-        </Reveal>
-      </section>
-
-      <section className="border-b border-parchment/10 bg-pine-deep text-parchment">
-        <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-4 px-5 py-8 sm:px-8">
-          <p className="max-w-xl text-parchment/85">{t.home.telehealthBand}</p>
-          <Link
-            href="/telehealth"
-            className="type-ui text-parchment/80 underline-offset-4 hover:text-parchment hover:underline"
-          >
-            {t.home.telehealthLink}
-          </Link>
+      <section id="first-visit" className="on-light bg-ground">
+        <div className="mx-auto grid max-w-[1400px] gap-x-10 px-5 py-14 sm:px-8 md:grid-cols-3 lg:py-20">
+          {practical.map((item, index) => (
+            <Reveal key={item.title} variant="rule" delay={index * 70} className="py-7">
+              <h2 className="type-heading text-[clamp(1.3rem,1.8vw,1.6rem)] leading-[1.15]">{item.title}</h2>
+              <p className="mt-3 text-[0.97rem] leading-relaxed text-fg/72">{item.body}</p>
+              <p className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+                {item.links.map((link) => (
+                  <TextLink key={link.href} href={link.href}>
+                    {link.label}
+                  </TextLink>
+                ))}
+              </p>
+            </Reveal>
+          ))}
         </div>
       </section>
 

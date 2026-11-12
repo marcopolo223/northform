@@ -17,7 +17,7 @@ export default function BillingPage() {
     <>
       <JsonLd data={faqSchema([...practiceFaq])} />
       <LocalizedHeader section="billing" image="/images/spokane-bridge.jpg" imageAlt="The swinging bridge over the Spokane River at Riverside State Park" />
-      <Container className="py-10 sm:py-12 lg:py-16">
+      <Container className="py-14 lg:py-24">
         <BillingBody />
       </Container>
     </>

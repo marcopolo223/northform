@@ -83,7 +83,7 @@ export const catalogPt: typeof catalogEn = {
       what: "O que resta no sistema nervoso depois de o acontecimento ter acabado.",
       how: "Psicoterapia, sono e medicação virada para a função — não só o flashback.",
       treatment:
-        "Lesão ocupacional, deslocamento cultural, o regresso do estrangeiro, uma unidade que nunca teve pessoal suficiente: o trabalho é regulação e função — um emprego, uma casa, um amigo. Psicoterapia, informação genómica, suplementos quando ajudam, EMDR quando é o instrumento certo, e medicação convencional virada para os sintomas, não só para o flashback.",
+        "Lesão ocupacional, deslocamento cultural, o regresso do estrangeiro, uma unidade que nunca teve pessoal suficiente: o trabalho é regulação e função — um emprego, uma casa, um amigo. Psicoterapia, informação genómica, suplementos quando ajudam, e medicação convencional virada para os sintomas, não só para o flashback.",
       answer:
         "O trauma é o que resta no sistema nervoso depois de o acontecimento ter acabado — lesão ocupacional, deslocamento cultural, o regresso do estrangeiro, uma unidade que nunca teve pessoal suficiente. O tratamento usa psicoterapia, informação genómica, suplementos quando ajudam, e medicação convencional virada para os sintomas e a função — não só o flashback.",
       lede: "Cuidado depois de trauma ocupacional, cultural e pessoal.",
@@ -91,7 +91,7 @@ export const catalogPt: typeof catalogEn = {
         "A lesão ocupacional, social e cultural pertence aqui. Também os pesadelos, a culpa, a vergonha e a insónia que chegam numa vida espiritual. O objectivo é a regulação e a função — um emprego, uma casa, um amigo — não só se as alucinações desapareceram.",
       ],
       faq: [
-        { q: "Oferecem EMDR?", a: "O EMDR é uma das vias de serviço. Se é o instrumento certo decide-se na avaliação, não como um item de menu à porta." },
+        { q: "Vão oferecer EMDR?", a: "O EMDR está previsto para setembro de 2027. Se é o instrumento certo decidir-se-á na avaliação, não como um item de menu à porta." },
         { q: "O trauma laboral está coberto?", a: "Sim. Os recursos deste site também cobrem linguagem FMLA quando uma carreira e um sistema nervoso precisam de protecção." },
       ],
     },
@@ -99,11 +99,11 @@ export const catalogPt: typeof catalogEn = {
       slug: "oud",
       title: "Perturbação por uso de opiáceos",
       what: "Uma condição médica, não um veredicto moral.",
-      how: "Tratamento assistido por medicação, com discrição quando é necessário.",
+      how: "Tratamento assistido por medicação a partir de janeiro de 2027, com discrição quando é necessário.",
       treatment:
-        "O tratamento assistido por medicação é cuidado médico ordinário dentro do mesmo quadro de sessenta minutos que o resto da consulta. Não tem de nomear um local de trabalho na primeira frase. As ordens profissionais e as comunidades pequenas fazem da publicidade um risco clínico próprio.",
+        "O tratamento assistido por medicação, que abre em janeiro de 2027, é cuidado médico ordinário dentro do mesmo quadro de sessenta minutos que o resto da consulta. Não tem de nomear um local de trabalho na primeira frase. As ordens profissionais e as comunidades pequenas fazem da publicidade um risco clínico próprio.",
       answer:
-        "A perturbação por uso de opiáceos é uma condição médica, não um veredicto moral. O tratamento assistido por medicação está disponível, incluindo para profissionais de saúde e primeiros respondentes que precisam de discrição.",
+        "A perturbação por uso de opiáceos é uma condição médica, não um veredicto moral. O tratamento assistido por medicação estará disponível a partir de janeiro de 2027, incluindo para profissionais de saúde e primeiros respondentes que precisam de discrição.",
       lede: "Cuidado psiquiátrico ordinário, com discrição quando é necessário.",
       body: [
         "A página pública é clínica de propósito. As ordens profissionais e as comunidades pequenas fazem da publicidade um risco clínico próprio — não tem de nomear um local de trabalho na primeira frase.",
@@ -134,7 +134,7 @@ export const catalogPt: typeof catalogEn = {
       slug: "mat",
       title: "Tratamento assistido por medicação",
       answer:
-        "O TAM para a perturbação por uso de opiáceos é cuidado médico ordinário. Oferece-se aqui com o mesmo quadro de sessenta minutos que o resto da consulta.",
+        "O TAM para a perturbação por uso de opiáceos é cuidado médico ordinário. Oferecer-se-á aqui a partir de janeiro de 2027 com o mesmo quadro de sessenta minutos que o resto da consulta.",
       lede: "A discrição faz parte da medicina.",
       body: [
         "Profissionais de saúde e primeiros respondentes podem começar sem anunciar um local de trabalho. O caminho público continua a ser a admissão. Se isto for uma emergência, ligue 911.",
@@ -147,13 +147,13 @@ export const catalogPt: typeof catalogEn = {
       slug: "perinatal",
       title: "Saúde mental perinatal",
       answer:
-        "A gravidez, o pós-parto e a alteração hormonal podem perturbar o sono, o humor e o apego. O cuidado aqui inclui psiquiatria e, quando os sintomas de saúde mental o exigem, conversas sobre terapia hormonal da menopausa e perinatal na mesma consulta.",
+        "A gravidez, o pós-parto e a alteração hormonal podem perturbar o sono, o humor e o apego. O cuidado perinatal abre em maio de 2027 e incluirá psiquiatria na mesma consulta.",
       lede: "Cuidado psiquiátrico na gravidez, no pós-parto e na transição hormonal.",
       body: [
-        "Isto não é uma boutique à parte. É a mesma consulta — diagnóstico, prescrição, sessenta minutos — aplicada a um corpo que está a mudar. Os detalhes clínicos confirmam-se com Mitchell; esta página é uma porta, não um protocolo.",
+        "Isto não é uma boutique à parte. Será a mesma consulta — diagnóstico, prescrição, sessenta minutos — aplicada a um corpo que está a mudar. Os detalhes clínicos confirmam-se com Mitch; esta página é uma porta, não um protocolo.",
       ],
       faq: [
-        { q: "Prescrevem na gravidez?", a: "A prescrição está disponível. O que é apropriado é uma decisão clínica caso a caso, não uma promessa de um site." },
+        { q: "Prescrevem na gravidez?", a: "A prescrição estará disponível quando o cuidado perinatal abrir em maio de 2027. O que é apropriado é uma decisão clínica caso a caso, não uma promessa de um site." },
       ],
     },
     "child-adolescent": {
@@ -173,10 +173,10 @@ export const catalogPt: typeof catalogEn = {
       slug: "emdr",
       title: "EMDR",
       answer:
-        "A dessensibilização e o reprocessamento por movimentos oculares é uma forma de trabalhar com a memória traumática. Oferece-se como uma via de serviço, não como uma religião. Se é o instrumento certo decide-se depois de uma avaliação.",
+        "A dessensibilização e o reprocessamento por movimentos oculares é uma forma de trabalhar com a memória traumática. Oferecer-se-á como uma via de serviço a partir de setembro de 2027, não como uma religião. Se é o instrumento certo decide-se depois de uma avaliação.",
       lede: "Um método, quando o caso o pede.",
       body: [
-        "O trauma aqui também inclui a reintegração ocupacional e cultural. O EMDR senta-se ao lado da conversa, das pistas genómicas e da medicação — nunca em vez de uma hora cuidadosa.",
+        "O trauma aqui também inclui a reintegração ocupacional e cultural. O EMDR sentar-se-á ao lado da conversa, das pistas genómicas e da medicação — nunca em vez de uma hora cuidadosa.",
       ],
       faq: [
         { q: "Cada caso de trauma é EMDR?", a: "Não. O método segue a pessoa." },
@@ -189,7 +189,7 @@ export const catalogPt: typeof catalogEn = {
         "Os sistemas nervosos que envelhecem ainda merecem sessenta minutos. Humor, cognição, sono, polifarmácia e a dignidade de um emprego, uma casa e um amigo continuam a ser a medida. O cuidado é cuidadoso com os medicamentos e honesto sobre como se vê a função.",
       lede: "Função na vida posterior, não só listas de sintomas.",
       body: [
-        "Esta via faz parte da mesma consulta. Esperam-se listas médicas complexas e sistemas familiares. A telessaúde em Washington está disponível quando a viagem é a barreira.",
+        "Esta via faz parte da mesma consulta. Esperam-se listas médicas complexas e sistemas familiares. A telessaúde em Washington e Idaho está disponível quando a viagem é a barreira.",
       ],
       faq: [
         { q: "Só vêem adultos mais velhos em pessoa?", a: "A telessaúde está disponível para pacientes em Washington. Os planos presenciais seguem o endereço em Contacto." },
@@ -234,29 +234,15 @@ export const catalogPt: typeof catalogEn = {
   fees: {
     rows: [
       { service: "Chamada breve de encaixe", duration: "10–15 min", includes: "Uma chamada curta e confidencial para ver se a Northform é o encaixe certo antes de se comprometer a nada." },
-      { service: "Avaliação psiquiátrica abrangente", duration: "75–90 min", includes: "Uma consulta diagnóstica mais longa com história, rastreios padronizados e um diagnóstico formal quando encaixa." },
-      { service: "Admissão de psiquiatria funcional", duration: "120 min", includes: "Para humor, ansiedade, PHDA, sono, trauma ou stresse complexos, sobreposição médica e histórias longas de medicação. Análises facturadas à parte." },
-      { service: "Psiquiatria integrada + terapia de apoio", duration: "60 min — a base Northform", includes: "Gestão de medicação e terapia na mesma hora." },
-      { service: "Seguimento padrão de medicação", duration: "25–30 min", includes: "Uma checagem de como está a funcionar um plano de medicação." },
-      { service: "Seguimento alargado", duration: "45–50 min", includes: "Para mudanças complexas de medicação, efeitos secundários, revisitar um diagnóstico ou prevenção de recaída." },
-      { service: "Avaliação de PHDA e medicação controlada", duration: "", includes: "Escalas, revisão de registos, vitais, checagem do programa de monitorização de receitas (PMP) e um plano. Isto não é um teste neuropsicológico." },
-      { service: "Via de stresse profissional", duration: "Profissionais de saúde · primeiros respondentes · trauma", includes: "Uma via especializada às tarifas padrão acima." },
-      { service: "Cuidado de uso de substâncias concomitante", duration: "Confidencial · em consulta", includes: "Tratamento com medicação em consulta ao lado do cuidado psiquiátrico. Não é um programa de metadona." },
-      { service: "Psiquiatria ocupacional e regresso ao trabalho", duration: "", includes: "Avaliação por preocupações laborais, com relatórios e formulários facturados à hora." },
-      { service: "Formulários, cartas, revisão de registos e chamadas colaterais", duration: "", includes: "Os itens curtos fazem parte do seu cuidado. O trabalho mais longo é facturado em passos de 15 minutos ou cotado como tarifa fixa antecipadamente." },
+      { service: "Avaliação psiquiátrica", duration: "", includes: "Uma consulta diagnóstica mais longa com história, rastreios padronizados e um diagnóstico formal quando encaixa." },
+      { service: "Seguimento de medicação", duration: "Presencial ou telessaúde", includes: "Uma checagem de como está a funcionar um plano de medicação." },
+      { service: "Seguimento abrangente", duration: "", includes: "Um seguimento mais longo para mudanças complexas de medicação, efeitos secundários ou revisitar um diagnóstico." },
+      { service: "Avaliação inicial de PHDA", duration: "", includes: "Escalas, revisão de registos, checagem do programa de monitorização de receitas (PMP) e um plano. Isto não é um teste neuropsicológico." },
+      { service: "Admissão de tratamento de uso de substâncias", duration: "Confidencial · em consulta", includes: "Admissão para tratamento de uso de substâncias ao lado do cuidado psiquiátrico. Disponível a partir de janeiro de 2027." },
+      { service: "Avaliação de animal de serviço", duration: "", includes: "Uma avaliação psiquiátrica em apoio de um animal de serviço, quando o quadro clínico o pede." },
+      { service: "Formulários, cartas e revisão de registos", duration: "", includes: "Papelada, cartas e revisão de registos são facturadas em passos de 15 minutos." },
     ],
-    first: {
-      eval: "Avaliação psiquiátrica abrangente · $325",
-      functional: "Admissão de psiquiatria funcional · $525",
-      adhd: "Avaliação de PHDA e medicação controlada · $350",
-      sud: "Cuidado de uso de substâncias concomitante · $400",
-      occ: "Avaliação de psiquiatria ocupacional · $375",
-    },
-    follow: {
-      baseline: "Psiquiatria de 60 min + terapia de apoio · $275",
-      med: "Seguimento padrão de medicação · $175",
-      extended: "Seguimento alargado · $250",
-      "sud-follow": "Seguimento de uso de substâncias · $180",
-    },
+    first: {"eval":"Avaliação psiquiátrica · $350","adhd":"Avaliação inicial de PHDA · $350","sud":"Admissão de tratamento de uso de substâncias · $400","animal":"Avaliação de animal de serviço · $120"},
+    follow: {"med":"Seguimento de medicação · $175","comprehensive":"Seguimento abrangente · $350"},
   },
 };

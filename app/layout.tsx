@@ -6,6 +6,7 @@ import { SiteChrome } from "@/components/SiteChrome";
 import { localeMeta } from "@/lib/i18n/config";
 import { getRequestLocale } from "@/lib/i18n/server";
 import { medicalBusinessGraph } from "@/lib/schema";
+import { seasonFor } from "@/lib/season";
 import { seo } from "@/lib/seo";
 import { site } from "@/site.config";
 import "./globals.css";
@@ -57,16 +58,16 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0e1612",
-  colorScheme: "dark",
+  themeColor: "#f6f2ea",
+  colorScheme: "light",
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   const locale = await getRequestLocale();
 
   return (
-    <html lang={localeMeta[locale].html} data-scroll-behavior="smooth" className={`${sourceSans.variable} ${newsreader.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-pine-deep font-sans text-parchment">
+    <html lang={localeMeta[locale].html} data-season={seasonFor()} data-scroll-behavior="smooth" className={`${sourceSans.variable} ${newsreader.variable} h-full antialiased`}>
+      <body className="on-light flex min-h-full flex-col bg-ground font-sans">
         <noscript>
           <style>{`.reveal{opacity:1;transform:none}`}</style>
         </noscript>

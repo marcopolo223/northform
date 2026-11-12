@@ -1,5 +1,7 @@
 import { Container } from "@/components/Container";
 import { FrameImage } from "@/components/FrameImage";
+import { Reveal } from "@/components/Reveal";
+import { SplitWords } from "@/components/SplitWords";
 import { cn } from "@/lib/cn";
 
 export function PageHeader({
@@ -8,7 +10,6 @@ export function PageHeader({
   lede,
   image,
   imageAlt = "",
-  size = "page",
   children,
 }: {
   eyebrow?: string;
@@ -20,49 +21,40 @@ export function PageHeader({
   children?: React.ReactNode;
 }) {
   return (
-    <section data-site-hero={image ? true : undefined} className="relative">
-      {image ? (
-        <div
-          className={cn(
-            "relative overflow-hidden",
-            size === "home" ? "h-[78svh] min-h-[560px]" : "h-[56svh] min-h-[400px] lg:h-[62svh]",
-          )}
-        >
-          <FrameImage
-            src={image}
-            alt={imageAlt}
-            className="h-full w-full"
-            priority
-            scrim
-            share
-            parallax
-          />
-          <div
-            className="absolute inset-0 bg-gradient-to-r from-pine-deep/80 via-pine-deep/40 to-transparent"
-            aria-hidden
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-pine-deep via-pine-deep/20 to-pine-deep/35" aria-hidden />
-          <Container className="absolute inset-x-0 bottom-0 z-10 pb-10 pt-28 sm:pb-12">
-            <div className="page-header-copy max-w-[40rem] text-parchment">
-              {eyebrow ? (
-                <p className="type-kicker text-parchment/80">{eyebrow}</p>
-              ) : null}
-              <h1 className={cn("type-display text-parchment", eyebrow && "mt-4")}>{title}</h1>
-              {lede ? <p className="type-lede mt-5 max-w-md text-parchment/85">{lede}</p> : null}
+    <section className="on-light bg-ground">
+      <Container className="pb-12 pt-[calc(var(--chrome-h,7rem)+3.25rem)] lg:pb-16 lg:pt-[calc(var(--chrome-h,7rem)+5rem)]">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-8">
+          <div className="lg:col-span-8">
+            {eyebrow ? <p className="type-kicker eyebrow page-header-copy text-accent">{eyebrow}</p> : null}
+            <h1 className={cn("type-page max-w-[14ch]", eyebrow && "mt-6")}>
+              <SplitWords text={title} />
+            </h1>
+          </div>
+          {lede || children ? (
+            <div className="page-header-copy lg:col-span-4 lg:pb-1">
+              {lede ? <p className="type-voice max-w-md text-fg/78">{lede}</p> : null}
               {children}
             </div>
-          </Container>
+          ) : null}
         </div>
+      </Container>
+      {image ? (
+        <Container>
+          <Reveal variant="media" className="relative aspect-[5/4] overflow-hidden sm:aspect-[16/8]">
+            <FrameImage
+              src={image}
+              alt={imageAlt}
+              className="absolute inset-0"
+              priority
+              share
+              parallax
+              sizes="(min-width: 1400px) 1340px, 100vw"
+            />
+          </Reveal>
+        </Container>
       ) : (
-        <Container className="pt-[calc(var(--chrome-h,7.5rem)+2.5rem)] pb-10">
-          <div className="page-header-copy max-w-[40rem]">
-            {eyebrow ? (
-              <p className="type-kicker text-parchment/80">{eyebrow}</p>
-            ) : null}
-            <h1 className={cn("type-display text-parchment", eyebrow && "mt-4")}>{title}</h1>
-            {lede ? <p className="type-lede mt-5 max-w-md text-parchment/85">{lede}</p> : null}
-            {children}
-          </div>
+        <Container>
+          <div className="h-px bg-fg/15" />
         </Container>
       )}
     </section>

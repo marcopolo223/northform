@@ -10,14 +10,8 @@ export function NotFoundView() {
 
   return (
     <>
-      <PageHeader
-        eyebrow="404"
-        title={t.notFound.title}
-        lede={t.notFound.lede}
-        image="/images/spokane-bowl.jpg"
-        imageAlt=""
-      />
-      <Container className="py-8">
+      <PageHeader eyebrow="404" title={t.notFound.title} lede={t.notFound.lede} />
+      <Container className="py-14 lg:py-20">
         <ButtonLink href="/">{t.notFound.home}</ButtonLink>
       </Container>
     </>

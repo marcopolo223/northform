@@ -1,7 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Component, useEffect, useState, type ReactNode } from "react";
+import { Component, useSyncExternalStore, type ReactNode } from "react";
+import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 const BrainCanvas = dynamic(() => import("@/components/BrainCanvas"), {
   ssr: false,
@@ -30,23 +31,25 @@ class BrainBoundary extends Component<{ children: ReactNode }, { failed: boolean
   }
 }
 
-export function BrainSlot() {
-  const [webgl, setWebgl] = useState<boolean | null>(null);
-  const [reducedMotion, setReducedMotion] = useState(false);
+let webglSupport: boolean | undefined;
 
-  useEffect(() => {
+function detectWebgl() {
+  if (webglSupport === undefined) {
     try {
       const canvas = document.createElement("canvas");
-      setWebgl(Boolean(canvas.getContext("webgl2") || canvas.getContext("webgl")));
+      webglSupport = Boolean(canvas.getContext("webgl2") || canvas.getContext("webgl"));
     } catch {
-      setWebgl(false);
+      webglSupport = false;
     }
-    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const sync = () => setReducedMotion(media.matches);
-    sync();
-    media.addEventListener("change", sync);
-    return () => media.removeEventListener("change", sync);
-  }, []);
+  }
+  return webglSupport;
+}
+
+const noopSubscribe = () => () => {};
+
+export function BrainSlot() {
+  const webgl = useSyncExternalStore(noopSubscribe, detectWebgl, () => null);
+  const reducedMotion = useReducedMotion();
 
   return (
     <div

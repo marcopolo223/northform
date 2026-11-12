@@ -4,7 +4,7 @@ import { HealthDataView } from "@/components/LegalViews";
 export const metadata: Metadata = {
   title: "Consumer Health Data Privacy Policy",
   description:
-    "Washington My Health My Data Act policy placeholder for Northform Psychiatry — distinct from the general privacy notice and the HIPAA NPP.",
+    "How Northform Psychiatry's public website handles consumer health data under Washington's My Health My Data Act, and your rights to access, withdraw consent, and delete.",
 };
 
 export default function HealthDataPage() {

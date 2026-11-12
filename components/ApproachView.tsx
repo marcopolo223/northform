@@ -11,28 +11,37 @@ export function ApproachView() {
 
   return (
     <>
-      <LocalizedHeader section="approach" image="/images/spokane-bowl.jpg" imageAlt="Bowl and Pitcher basalt formations on the Spokane River" />
-      <Container className="py-8 sm:py-12 lg:py-16">
-        <Reveal>
-          <p className="mb-8 max-w-2xl text-[1.05rem] leading-relaxed text-parchment/85 lg:mb-12">
-            {t.approach.intro}
-          </p>
-        </Reveal>
-        <dl>
+      <LocalizedHeader
+        section="approach"
+        image="/images/spokane-bowl.jpg"
+        imageAlt="Bowl and Pitcher basalt formations on the Spokane River"
+      />
+      <Container className="py-16 lg:py-28">
+        <div className="grid lg:grid-cols-12">
+          <Reveal className="lg:col-span-8 lg:col-start-5">
+            <p className="type-voice text-[clamp(1.45rem,2.4vw,2.1rem)] leading-[1.35] text-fg">{t.approach.intro}</p>
+          </Reveal>
+        </div>
+        <dl className="mt-16 lg:mt-24">
           {t.approach.terms.map((term, index) => (
-            <Reveal key={term.name} delay={index * 70}>
-              <div className="grid gap-3 border-t border-parchment/15 py-8 sm:grid-cols-[18rem_minmax(0,1fr)] sm:gap-14 lg:py-10">
-                <dt className="font-serif text-[clamp(1.7rem,2.4vw,2.35rem)] leading-tight text-parchment">
-                  {term.name}
-                </dt>
-                <dd className="max-w-2xl text-[1.05rem] leading-relaxed text-parchment/85">{term.body}</dd>
-              </div>
+            <Reveal
+              key={term.name}
+              variant="rule"
+              delay={(index % 2) * 70}
+              className="grid gap-4 py-10 lg:grid-cols-12 lg:gap-8 lg:py-14"
+            >
+              <dt className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] leading-[1.05] tracking-[-0.03em] lg:col-span-4">
+                {term.name}
+              </dt>
+              <dd className="max-w-2xl text-[1.08rem] leading-[1.75] text-fg/78 lg:col-span-7 lg:col-start-6">
+                {term.body}
+              </dd>
             </Reveal>
           ))}
         </dl>
-      </Container>
-      <Container className="pb-16">
-        <BecomePatientButton />
+        <div className="mt-16 border-t border-fg/15 pt-10">
+          <BecomePatientButton />
+        </div>
       </Container>
     </>
   );

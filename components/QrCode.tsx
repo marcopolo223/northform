@@ -19,7 +19,7 @@ export async function QrCode({
   return (
     <figure className="max-w-56">
       <div
-        className="border border-stone bg-parchment p-3"
+        className="border border-stone bg-fg p-3"
         dangerouslySetInnerHTML={{ __html: svg }}
       />
       <figcaption className="sr-only">{alt}</figcaption>

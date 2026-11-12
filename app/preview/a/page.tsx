@@ -105,7 +105,7 @@ export default function PreviewAPage() {
             </Link>
           </div>
           <p className="text-sm leading-relaxed text-moss-soft lg:col-span-5 lg:text-right">
-            Based in Spokane · telehealth in Washington · Spanish available
+            Based in Spokane · telehealth in Washington and Idaho · Spanish available
             <br />
             {site.provider.credentials}
           </p>

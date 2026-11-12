@@ -15,26 +15,34 @@ export function AboutView() {
 
   return (
     <>
-      <LocalizedHeader section="about" image="/images/spokane-bridge.jpg" imageAlt="The swinging bridge over the Spokane River at Riverside State Park" />
+      <LocalizedHeader section="about" />
 
-      <Container className="grid items-start gap-10 py-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 lg:py-14">
-        <Reveal>
-          <PortraitPlaceholder />
-        </Reveal>
-        <Reveal delay={80}>
-          <div className="space-y-6 text-[1.08rem] leading-[1.7] text-parchment/85">
+      <Container className="grid items-start gap-14 py-14 lg:grid-cols-12 lg:gap-8 lg:py-24">
+        <div className="lg:sticky lg:top-[calc(var(--chrome-h)+2rem)] lg:col-span-5">
+          <Reveal variant="media">
+            <PortraitPlaceholder />
+          </Reveal>
+        </div>
+        <div className="lg:col-span-6 lg:col-start-7">
+          <Reveal>
             <CredentialStrip />
-            <p>{t.about.p1}</p>
-            <p>{t.about.p2}</p>
-            <p>{t.about.p3}</p>
-            <p>{t.about.p4}</p>
-            <div className="pt-2">
-              <ButtonLink href="/start" variant="light">
-                {t.nav.become}
-              </ButtonLink>
-            </div>
+            <p className="type-statement mt-8 text-[clamp(1.45rem,2.2vw,2rem)]">{t.about.p1}</p>
+          </Reveal>
+          <div className="mt-10 space-y-6 text-[1.08rem] leading-[1.75] text-fg/80">
+            <Reveal>
+              <p>{t.about.p2}</p>
+            </Reveal>
+            <Reveal>
+              <p>{t.about.p3}</p>
+            </Reveal>
+            <Reveal>
+              <p className="border-l border-fg/25 pl-6 font-serif text-[1.25rem] leading-[1.55] text-fg">{t.about.p4}</p>
+            </Reveal>
           </div>
-        </Reveal>
+          <div className="mt-12">
+            <ButtonLink href="/start">{t.nav.become}</ButtonLink>
+          </div>
+        </div>
       </Container>
 
       <EducationReel />

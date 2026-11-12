@@ -141,7 +141,7 @@ export const conditions: ConditionEntry[] = [
     what: "What remains in the nervous system after the event is over.",
     how: "Psychotherapy, sleep, and medication aimed at function — not only the flashback.",
     treatment:
-      "Occupational injury, cultural displacement, returning from abroad, a unit that never staffed safely: the work is regulation and function — a job, a home, a friend. Psychotherapy, genomic information, supplements when they help, EMDR when it is the right instrument, and conventional medication aimed at symptoms, not only the flashback.",
+      "Occupational injury, cultural displacement, returning from abroad, a unit that never staffed safely: the work is regulation and function — a job, a home, a friend. Psychotherapy, genomic information, supplements when they help, and conventional medication aimed at symptoms, not only the flashback.",
     answer:
       "Trauma is what remains in the nervous system after the event is over — occupational injury, cultural displacement, returning from abroad, a unit that never staffed safely. Treatment uses psychotherapy, genomic information, supplements when they help, and conventional medication aimed at symptoms and function — not only the flashback.",
     lede: "Care after occupational, cultural, and personal trauma.",
@@ -149,7 +149,7 @@ export const conditions: ConditionEntry[] = [
       "Occupational, social, and cultural injury belong here. So do nightmares, guilt, shame, and insomnia that arrive in a spiritual life. The aim is regulation and function — a job, a home, a friend — not only whether the hallucinations are gone.",
     ],
     faq: [
-      { q: "Do you offer EMDR?", a: "EMDR is one of the service lanes. Whether it is the right instrument is decided in the evaluation, not as a menu item at the door." },
+      { q: "Will you offer EMDR?", a: "EMDR is planned to open in September 2027. Whether it is the right instrument will be decided in the evaluation, not as a menu item at the door." },
       { q: "Is workplace trauma covered?", a: "Yes. Insights on this site also cover FMLA language when a career and a nervous system both need protecting." },
     ],
     citations: [
@@ -164,11 +164,11 @@ export const conditions: ConditionEntry[] = [
     title: "Opioid use disorder",
     symbol: "oud",
     what: "A medical condition, not a moral verdict.",
-    how: "Medication-assisted treatment, with discretion when it is required.",
+    how: "Medication-assisted treatment from January 2027, with discretion when it is required.",
     treatment:
-      "Medication-assisted treatment is ordinary medical care inside the same sixty-minute frame as the rest of the practice. You do not have to name a workplace in the first sentence. Licensing boards and small professional communities make publicity a clinical risk of its own.",
+      "Medication-assisted treatment, opening in January 2027, is ordinary medical care inside the same sixty-minute frame as the rest of the practice. You do not have to name a workplace in the first sentence. Licensing boards and small professional communities make publicity a clinical risk of its own.",
     answer:
-      "Opioid use disorder is a medical condition, not a moral verdict. Medication-assisted treatment is available, including for healthcare professionals and first responders who need discretion.",
+      "Opioid use disorder is a medical condition, not a moral verdict. Medication-assisted treatment will be available beginning January 2027, including for healthcare professionals and first responders who need discretion.",
     lede: "Ordinary psychiatric care, with discretion when it is required.",
     body: [
       "The public page is clinical on purpose. Licensing boards and small professional communities make publicity a clinical risk of its own — you do not have to name a workplace in the first sentence.",

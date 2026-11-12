@@ -10,27 +10,26 @@ import { useLocale } from "@/lib/i18n/locale-provider";
 export function InsightArticleView({ article }: { article: Article }) {
   const { t } = useLocale();
   const copy = t.catalog.articles[article.slug];
+  const body = copy?.body ?? article.body;
 
   return (
     <article>
-      <PageHeader
-        eyebrow={t.insights.eyebrow}
-        title={copy?.title ?? article.title}
-        lede={copy?.dek ?? article.dek}
-        image="/images/spokane-river.jpg"
-        imageAlt="The Spokane River winding through ponderosa pines at Riverside State Park"
-      />
-      <Container className="max-w-3xl space-y-5 py-10 text-lg leading-relaxed text-parchment/80 sm:py-12">
-        <p className="text-xs uppercase tracking-[0.2em] text-moss-soft">
-          <Link href="/insights" className="hover:text-parchment">
+      <PageHeader eyebrow={t.insights.eyebrow} title={copy?.title ?? article.title} lede={copy?.dek ?? article.dek} />
+      <Container className="grid gap-10 py-14 lg:grid-cols-12 lg:gap-8 lg:py-24">
+        <aside className="lg:col-span-3">
+          <Link href="/insights" className="type-ui link-u is-ruled text-fg/75 hover:text-fg">
             {t.article.allInsights}
           </Link>
-        </p>
-        {(copy?.body ?? article.body).map((paragraph) => (
-          <p key={paragraph.slice(0, 32)}>{paragraph}</p>
-        ))}
-        <div className="pt-4">
-          <BecomePatientButton />
+        </aside>
+        <div className="space-y-6 text-[1.1rem] leading-[1.8] text-fg/80 lg:col-span-7 lg:col-start-5">
+          {body.map((paragraph, index) => (
+            <p key={paragraph.slice(0, 32)} className={index === 0 ? "type-statement text-fg" : undefined}>
+              {paragraph}
+            </p>
+          ))}
+          <div className="pt-6">
+            <BecomePatientButton />
+          </div>
         </div>
       </Container>
     </article>

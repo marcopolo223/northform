@@ -1,25 +1,22 @@
 "use client";
 
+import Image from "next/image";
 import { cn } from "@/lib/cn";
-import { FrameImage } from "@/components/FrameImage";
-import { useLocale } from "@/lib/i18n/locale-provider";
+import { site } from "@/site.config";
 
-export function PortraitPlaceholder({ className }: { className?: string }) {
-  const { t } = useLocale();
-
+/** Mitch's portrait. Studio grey is kept; the frame is paper-cut, not rounded. */
+export function PortraitPlaceholder({ className, priority = false }: { className?: string; priority?: boolean }) {
   return (
-    <figure className={cn("relative aspect-[4/5] w-full overflow-hidden", className)}>
-      <FrameImage
-        src="/images/spokane-bridge.jpg"
-        alt=""
-        className="h-full w-full"
-        sizes="(min-width: 1024px) 45vw, 100vw"
-        drift
+    <figure className={cn("relative aspect-[3/4] w-full overflow-hidden bg-[#4a4a4b]", className)}>
+      <Image
+        src="/images/mitch-corbet.jpg"
+        alt={`${site.provider.name}, ${site.provider.credentials}`}
+        fill
+        priority={priority}
+        sizes="(min-width: 1024px) 40vw, 100vw"
+        className="object-cover"
+        style={{ objectPosition: "50% 22%" }}
       />
-      <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-pine-deep/90 to-transparent px-5 py-5 text-parchment">
-        <p className="font-serif text-xl">{t.about.portrait}</p>
-        <p className="mt-1 text-sm text-parchment/75">{t.about.portraitNote}</p>
-      </figcaption>
     </figure>
   );
 }

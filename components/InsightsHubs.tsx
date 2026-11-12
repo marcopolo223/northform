@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Container } from "@/components/Container";
+import { ReadingColumn } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { interpolate } from "@/lib/i18n/dictionaries";
 import { useLocale } from "@/lib/i18n/locale-provider";
@@ -37,23 +37,23 @@ export function EducationView() {
   return (
     <>
       <HubHeader title={copy.title} lede={copy.lede} image={photos.forest.src} imageAlt={photos.forest.alt} />
-      <Container className="max-w-3xl space-y-4 py-10 leading-relaxed text-parchment/80">
+      <ReadingColumn className="space-y-4">
         <p>
           {interpolate(copy.body, {
             emergency: site.crisis.emergency,
             line: site.crisis.line,
           })}
         </p>
-        <ul className="divide-y divide-parchment/15 border-y border-parchment/15">
+        <ul className="divide-y divide-fg/15 border-y border-fg/15">
           {links.map((item) => (
             <li key={item.href} className="py-4">
-              <a className="text-parchment underline-offset-4 hover:underline" href={item.href}>
+              <a className="text-fg link-u is-ruled" href={item.href}>
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-      </Container>
+      </ReadingColumn>
     </>
   );
 }
@@ -65,14 +65,14 @@ export function RecipesView() {
   return (
     <>
       <HubHeader title={copy.title} lede={copy.lede} image={photos.mist.src} imageAlt={photos.mist.alt} />
-      <Container className="max-w-3xl py-10">
+      <ReadingColumn>
         {copy.items.map((item) => (
-          <article key={item.title} className="border-t border-parchment/15 py-8">
-            <h2 className="font-serif text-2xl text-parchment">{item.title}</h2>
-            <p className="mt-3 leading-relaxed text-parchment/70">{item.body}</p>
+          <article key={item.title} className="border-t border-fg/15 py-8">
+            <h2 className="type-heading text-fg">{item.title}</h2>
+            <p className="mt-3 leading-relaxed text-fg/70">{item.body}</p>
           </article>
         ))}
-      </Container>
+      </ReadingColumn>
     </>
   );
 }
@@ -84,34 +84,34 @@ export function WomenView() {
   return (
     <>
       <HubHeader title={copy.title} lede={copy.lede} image={photos.pines.src} imageAlt={photos.pines.alt} />
-      <Container className="max-w-3xl space-y-5 py-10 leading-relaxed text-parchment/80">
+      <ReadingColumn className="space-y-5">
         <p>{copy.body}</p>
-        <ul className="divide-y divide-parchment/15 border-y border-parchment/15">
+        <ul className="divide-y divide-fg/15 border-y border-fg/15">
           <li className="py-4">
-            <Link className="text-parchment underline-offset-4 hover:underline" href="/services/perinatal">
+            <Link className="text-fg link-u is-ruled" href="/services/perinatal">
               {copy.perinatal}
             </Link>
           </li>
           <li className="py-4">
-            <Link className="text-parchment underline-offset-4 hover:underline" href="/conditions/depression">
+            <Link className="text-fg link-u is-ruled" href="/conditions/depression">
               {copy.depression}
             </Link>
           </li>
           <li className="py-4">
             <a
-              className="text-parchment underline-offset-4 hover:underline"
+              className="text-fg link-u is-ruled"
               href="https://www.nimh.nih.gov/health/publications/perinatal-depression"
             >
               NIMH — perinatal depression
             </a>
           </li>
           <li className="py-4">
-            <a className="text-parchment underline-offset-4 hover:underline" href="https://www.womenshealth.gov/mental-health">
+            <a className="text-fg link-u is-ruled" href="https://www.womenshealth.gov/mental-health">
               Office on Women’s Health — mental health
             </a>
           </li>
         </ul>
-      </Container>
+      </ReadingColumn>
     </>
   );
 }
@@ -123,12 +123,12 @@ export function VideosView() {
   return (
     <>
       <HubHeader title={copy.title} lede={copy.lede} image={photos.forest.src} imageAlt={photos.forest.alt} />
-      <Container className="max-w-3xl space-y-5 py-10 leading-relaxed text-parchment/80">
+      <ReadingColumn className="space-y-5">
         <p>{copy.body}</p>
-        <div className="flex aspect-video items-center justify-center border border-parchment/15 bg-pine text-sm text-parchment/60">
+        <div className="flex aspect-video items-center justify-center border border-fg/15 bg-panel text-sm text-fg/60">
           {copy.slot}
         </div>
-      </Container>
+      </ReadingColumn>
     </>
   );
 }

@@ -11,53 +11,53 @@ export function TreatGrid() {
   const { t } = useLocale();
 
   return (
-    <ul className={cn("treat-grid grid items-stretch gap-3 sm:grid-cols-2 lg:grid-cols-3", open && "is-open")}>
+    <ul className="list-none border-t border-fg/20">
       {treatCells.map((cell) => {
         const expanded = open === cell.slug;
         const copy = t.treat.cells[cell.slug as keyof typeof t.treat.cells];
         return (
-          <li key={cell.slug} className="min-w-0">
+          <li
+            key={cell.slug}
+            className={cn("treat-row border-b border-fg/20", expanded && "is-expanded")}
+          >
+            <button
+              type="button"
+              className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-baseline gap-x-6 gap-y-1 py-6 text-left sm:grid-cols-[minmax(0,1fr)_17rem_auto] sm:py-7"
+              aria-expanded={expanded}
+              aria-controls={`treat-${cell.slug}`}
+              onClick={() => setOpen(expanded ? null : cell.slug)}
+            >
+              <span className="treat-title font-serif text-[clamp(1.45rem,2.6vw,2.25rem)] leading-[1.1] tracking-[-0.025em] text-fg">
+                {copy.title}
+              </span>
+              <span className="type-kicker order-last col-span-1 text-fg/55 sm:order-none">{copy.kicker}</span>
+              <span
+                className="treat-plus row-span-2 self-center font-serif text-[1.6rem] font-light leading-none text-fg/70 sm:row-span-1"
+                aria-hidden
+              >
+                +
+              </span>
+            </button>
             <div
+              id={`treat-${cell.slug}`}
+              aria-hidden={!expanded}
               className={cn(
-                "treat-cell relative flex h-full flex-col overflow-hidden border border-parchment/20 bg-pine p-5",
-                expanded && "is-expanded border-parchment/45",
+                "grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:duration-0",
+                expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
               )}
             >
-              <button
-                type="button"
-                className="flex w-full items-start justify-between gap-4 text-left"
-                aria-expanded={expanded}
-                aria-controls={`treat-${cell.slug}`}
-                onClick={() => setOpen(expanded ? null : cell.slug)}
-              >
-                <span>
-                  <span className="type-heading block min-h-[2.5em] text-balance text-parchment">
-                    {copy.title}
-                  </span>
-                  <span className="type-kicker mt-2 block text-moss-soft">{copy.kicker}</span>
-                </span>
-                <span className="treat-plus type-ui mt-1 shrink-0 text-parchment/55" aria-hidden>
-                  +
-                </span>
-              </button>
-              <div
-                id={`treat-${cell.slug}`}
-                aria-hidden={!expanded}
-                className={cn(
-                  "grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:duration-0",
-                  expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
-                )}
-              >
-                <div className="overflow-hidden" {...(!expanded ? { inert: true } : {})}>
-                  <div className="treat-reveal mt-4 border-t border-parchment/12 pt-4">
-                    <p className="type-meta text-moss-soft">{t.treat.what}</p>
-                    <p className="mt-1 text-[0.95rem] leading-relaxed text-parchment/75">{copy.what}</p>
-                    <p className="type-meta mt-4 text-moss-soft">{t.treat.how}</p>
-                    <p className="mt-1 text-[0.95rem] leading-relaxed text-parchment/75">{copy.how}</p>
-                    <Link
-                      href={cell.href}
-                      className="type-ui mt-4 inline-flex text-moss-soft underline-offset-4 transition-colors hover:text-parchment hover:underline"
-                    >
+              <div className="overflow-hidden" {...(!expanded ? { inert: true } : {})}>
+                <div className="treat-reveal grid gap-6 pb-9 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_17rem] sm:gap-10">
+                  <div>
+                    <p className="type-kicker text-accent">{t.treat.what}</p>
+                    <p className="mt-2 max-w-md text-fg/80">{copy.what}</p>
+                  </div>
+                  <div>
+                    <p className="type-kicker text-accent">{t.treat.how}</p>
+                    <p className="mt-2 max-w-md text-fg/80">{copy.how}</p>
+                  </div>
+                  <div className="sm:self-end">
+                    <Link href={cell.href} className="type-ui link-u is-ruled text-fg">
                       {copy.link} →
                     </Link>
                   </div>

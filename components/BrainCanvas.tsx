@@ -136,12 +136,15 @@ function useBrainMesh() {
 
 function Controls({ reducedMotion }: { reducedMotion: boolean }) {
   const [autoRotate, setAutoRotate] = useState(!reducedMotion);
+  const [motionPref, setMotionPref] = useState(reducedMotion);
   const resume = useRef<number>(0);
 
-  useEffect(() => {
+  if (motionPref !== reducedMotion) {
+    setMotionPref(reducedMotion);
     setAutoRotate(!reducedMotion);
-    return () => window.clearTimeout(resume.current);
-  }, [reducedMotion]);
+  }
+
+  useEffect(() => () => window.clearTimeout(resume.current), []);
 
   return (
     <OrbitControls

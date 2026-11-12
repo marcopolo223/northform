@@ -2,8 +2,10 @@
 
 import { BecomePatientButton } from "@/components/BecomePatientButton";
 import { BillingIntro } from "@/components/BillingIntro";
+import { CancellationPolicy } from "@/components/CancellationPolicy";
 import { FeeEstimate } from "@/components/FeeEstimate";
 import { PracticeFaq } from "@/components/PracticeFaq";
+import { Reveal } from "@/components/Reveal";
 import { feeRows } from "@/content/fees";
 import { useLocale } from "@/lib/i18n/locale-provider";
 import { site } from "@/site.config";
@@ -11,85 +13,72 @@ import { site } from "@/site.config";
 export function BillingBody() {
   const { t } = useLocale();
 
+  const notes = [
+    { title: t.billing.superbill, body: <p>{t.billing.superbillBody}</p> },
+    { title: t.billing.why, body: <p>{t.billing.whyBody}</p> },
+    {
+      title: t.billing.insurance,
+      body:
+        site.insurance.length === 0 ? (
+          <p>{t.billing.insuranceNone}</p>
+        ) : (
+          <ul className="list-disc pl-5">
+            {site.insurance.map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
+        ),
+    },
+    { title: t.billing.sliding, body: <p>{t.billing.slidingBody}</p> },
+    { title: t.billing.gfe, body: <p>{t.billing.gfeBody}</p> },
+  ];
+
   return (
-    <>
+    <div className="space-y-16 lg:space-y-24">
       <BillingIntro />
 
-      <div className="mt-14">
+      <Reveal>
         <FeeEstimate />
-      </div>
+      </Reveal>
 
-      <section className="mt-14">
-        <h2 className="type-heading text-parchment">{t.billing.standard}</h2>
-        <div className="mt-6 overflow-x-auto border border-parchment/15">
-          <table className="w-full min-w-[40rem] text-left text-[0.92rem]">
-            <thead className="type-kicker border-b border-parchment/15 text-parchment/70">
-              <tr>
-                <th className="px-5 py-4 font-medium">{t.billing.tableService}</th>
-                <th className="px-5 py-4 font-medium">{t.billing.tableRate}</th>
-                <th className="px-5 py-4 font-medium">{t.billing.tableIncludes}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {feeRows.map((row, index) => {
-                const copy = t.catalog.fees.rows[index];
-                return (
-                  <tr key={row.service} className="border-t border-parchment/10 align-top">
-                    <td className="px-5 py-5 text-parchment">
-                      {copy?.service ?? row.service}
-                      {copy?.duration ? (
-                        <span className="mt-1 block text-[0.78rem] text-parchment/75">{copy.duration}</span>
-                      ) : null}
-                    </td>
-                    <td className="px-5 py-5 whitespace-nowrap text-parchment">{row.rate}</td>
-                    <td className="px-5 py-5 leading-relaxed text-parchment/80">{copy?.includes ?? row.includes}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        <p className="type-meta mt-4 text-parchment/75">{t.billing.ratesNote}</p>
+      <section>
+        <h2 className="type-heading">{t.billing.standard}</h2>
+        <Reveal className="mt-6">
+          <ul className="grid list-none gap-px border border-fg/15 bg-fg/15 sm:grid-cols-2 lg:grid-cols-4">
+            {feeRows.map((row, index) => {
+              const copy = t.catalog.fees.rows[index];
+              const includes = copy?.includes ?? row.includes;
+              return (
+                <li key={row.service} className="flex flex-col bg-ground p-6">
+                  <p className="font-serif text-[1.8rem] leading-none tracking-[-0.03em] text-fg">{row.rate}</p>
+                  <p className="mt-4 font-serif text-[1.1rem] leading-snug text-fg">{copy?.service ?? row.service}</p>
+                  {copy?.duration ? <p className="type-meta mt-1 text-fg/65">{copy.duration}</p> : null}
+                  {includes ? <p className="mt-3 text-[0.92rem] leading-relaxed text-fg/72">{includes}</p> : null}
+                </li>
+              );
+            })}
+          </ul>
+        </Reveal>
+        <p className="type-meta mt-4 text-fg/65">{t.billing.ratesNote}</p>
       </section>
 
-      <section className="mt-14 grid gap-8 leading-relaxed text-parchment/85 sm:grid-cols-2">
-        <div>
-          <h2 className="type-heading text-parchment">{t.billing.why}</h2>
-          <p className="mt-3">{t.billing.whyBody}</p>
-        </div>
-        <div>
-          <h2 className="type-heading text-parchment">{t.billing.superbill}</h2>
-          <p className="mt-3">{t.billing.superbillBody}</p>
-        </div>
-        <div>
-          <h2 className="type-heading text-parchment">{t.billing.insurance}</h2>
-          {site.insurance.length === 0 ? (
-            <p className="mt-3">{t.billing.insuranceNone}</p>
-          ) : (
-            <ul className="mt-3 list-disc pl-5">
-              {site.insurance.map((name) => (
-                <li key={name}>{name}</li>
-              ))}
-            </ul>
-          )}
-        </div>
-        <div>
-          <h2 className="type-heading text-parchment">{t.billing.sliding}</h2>
-          <p className="mt-3">{t.billing.slidingBody}</p>
-        </div>
-      </section>
+      <ul className="grid list-none gap-px border border-fg/15 bg-fg/15 sm:grid-cols-2 lg:grid-cols-5">
+        {notes.map((note) => (
+          <li key={note.title} className="bg-ground p-6 sm:last:col-span-2 lg:last:col-span-1">
+            <h2 className="type-heading text-[1.2rem]">{note.title}</h2>
+            <div className="mt-3 text-[0.93rem] leading-relaxed text-fg/75">{note.body}</div>
+          </li>
+        ))}
+      </ul>
 
-      <section className="mt-10 max-w-2xl leading-relaxed text-parchment/85">
-        <h2 className="type-heading text-parchment">{t.billing.gfe}</h2>
-        <p className="mt-3">{t.billing.gfeBody}</p>
-      </section>
+      <CancellationPolicy />
 
-      <section className="mt-14 max-w-3xl">
+      <section className="max-w-3xl">
         <PracticeFaq />
-        <p className="mt-6">
+        <p className="mt-10">
           <BecomePatientButton variant="ghost" />
         </p>
       </section>
-    </>
+    </div>
   );
 }

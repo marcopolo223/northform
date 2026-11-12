@@ -226,7 +226,7 @@ export default function PreviewBPage() {
             ))}
           </ul>
           <p className="mt-16 text-center text-[0.8rem] text-parchment/50">
-            Based in Spokane · telehealth in Washington
+            Based in Spokane · telehealth in Washington and Idaho
           </p>
           <p className="mt-3 text-center">
             <Link href="/start" className="text-[0.82rem] text-parchment/80 underline-offset-4 hover:text-parchment hover:underline">

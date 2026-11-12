@@ -12,7 +12,7 @@ export function BotanicalMark({ className }: { className?: string }) {
     <button
       type="button"
       className={cn(
-        "inline-flex text-moss-soft/40 transition-colors hover:text-moss",
+        "inline-flex text-accent/40 transition-colors hover:text-moss",
         className,
       )}
       aria-label="A plant that thrives under stress"

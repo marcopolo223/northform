@@ -32,7 +32,7 @@ export const fr: Dictionary = {
     nondiscrimination: "Non-discrimination",
   },
   footer: {
-    hours: "télésanté dans l’État de Washington",
+    hours: "télésanté dans les États de Washington et de l’Idaho",
     crisis:
       "S’il s’agit d’une urgence, appelez le {emergency}. Pour un soutien en crise de santé mentale aux États-Unis, appelez ou envoyez un message au {line}.",
     photos:
@@ -48,16 +48,22 @@ export const fr: Dictionary = {
   crisis:
     "S’il s’agit d’une urgence, appelez le {emergency}. Pour un soutien en crise de santé mentale aux États-Unis, appelez ou envoyez un message au {line}. Ce site n’est pas un service de crise.",
   credentials: {
-    telehealth: "Télésanté dans l’État de Washington",
+    telehealth: "Télésanté dans les États de Washington et de l’Idaho",
     npiSoon: "NPI bientôt",
   },
   hero: {
     tagline: "Soixante minutes. Un nom. Un plan.",
     h1: "Des soins psychiatriques avec le temps de vous voir.",
-    lede: "Soixante minutes, un nom, un plan.",
+    lede: "Évaluation, prescription et psychothérapie dans la même heure, sans hâte — guidées par la pharmacogénomique, avec un infirmier praticien en psychiatrie à Spokane.",
+    facts: [
+      { label: "Première visite", value: "75–90 minutes" },
+      { label: "Chaque suivi", value: "Soixante minutes" },
+      { label: "Où", value: "Spokane · télésanté dans les États de Washington et de l’Idaho" },
+      { label: "Paiement", value: "Paiement privé · Superbill" },
+    ],
     treat: "Ce que nous traitons",
     spokane: "Spokane",
-    telehealth: "Télésanté dans l’État de Washington",
+    telehealth: "Télésanté dans les États de Washington et de l’Idaho",
   },
   treat: {
     titleBefore: "Ce que nous",
@@ -79,7 +85,7 @@ export const fr: Dictionary = {
         title: "Trauma et réintégration",
         kicker: "Occupationnel · Social · Culturel",
         what: "Ce qui reste après l’événement : un travail qui a brisé la confiance, une unité en sous-effectif, le retour de l’étranger, le déplacement culturel.",
-        how: "Psychothérapie, sommeil, pistes génomiques, EMDR lorsque c’est l’instrument juste, et médication tournée vers la fonction — un emploi, un foyer, un ami — pas seulement le flashback.",
+        how: "Psychothérapie, sommeil, pistes génomiques et médication tournée vers la fonction — un emploi, un foyer, un ami — pas seulement le flashback.",
         link: "TSPT et trauma",
       },
       identity: {
@@ -114,7 +120,7 @@ export const fr: Dictionary = {
         title: "Soins pour ceux qui soignent",
         kicker: "Confidentiel",
         what: "Professionnels de santé et premiers intervenants qui ne peuvent pas se permettre une salle d’attente publique.",
-        how: "La même psychiatrie de soixante minutes, y compris le traitement assisté par médication lorsqu’il est indiqué. La discrétion fait partie de la médecine.",
+        how: "La même psychiatrie de soixante minutes, avec la discrétion incluse. Le traitement assisté par médication ouvre en janvier 2027.",
         link: "Devenir patient",
       },
       "service-animal": {
@@ -210,9 +216,10 @@ export const fr: Dictionary = {
       clue: "Le rapport est un indice pour l’heure, jamais toute la carte. D’autres médicaments, l’âge et le foie peuvent imiter un gène. Un médicament qui aide déjà n’est pas automatiquement faux parce qu’une page l’a marqué.",
       sketch: "Un schéma de la pharmacogénomique dans cette pratique. Pas votre rapport, et pas un résultat.",
     },
+    practicalKicker: "Avant la première heure",
     providerLede:
       "Botanique à Oregon State, recherche en génétique, médecine fonctionnelle, soins infirmiers, soins critiques, puis psychiatrie de troisième cycle. Il construit un petit cabinet privé.",
-    aboutMitchell: "À propos de Mitchell",
+    aboutMitch: "À propos de Mitch",
     firstVisitTitle: "La première visite dure 75–90 minutes.",
     firstVisitBody:
       "Vous ne serez pas pressé. Un bref appel d’adéquation est gratuit si vous voulez entendre la voix avant de vous engager. Puis l’admission — et si cela convient, nous prenons rendez-vous.",
@@ -223,7 +230,7 @@ export const fr: Dictionary = {
       "Le paiement privé est un choix, pour que l’heure vous appartienne. Un superbill est disponible après une visite si vous souhaitez chercher un remboursement hors réseau.",
     rates: "Honoraires",
     telehealthBand:
-      "Les visites virtuelles sont des heures ordinaires de soixante minutes. Vous devez être dans l’État de Washington.",
+      "Les visites virtuelles sont des heures ordinaires de soixante minutes. Vous devez être dans l’État de Washington ou de l’Idaho.",
     telehealthLink: "Télésanté →",
   },
   cta: {
@@ -233,9 +240,9 @@ export const fr: Dictionary = {
   },
   about: {
     eyebrow: "À propos",
-    title: "Mitchell Corbet, PMHNP-BC.",
+    title: "Mitch Corbet, PMHNP-BC.",
     lede: "{name} construit Northform comme un petit cabinet privé — soins psychiatriques, pharmacogénétique et supplémentation sur mesure.",
-    p1: "Mitchell est l’aîné de quatre enfants d’un parent seul qui a lutté contre la dépendance et le fantôme du trauma générationnel, et qui a tout de même tenté d’aimer. Après la perte de l’autorité parentale, les frères et sœurs ont été placés dans des foyers d’accueil distincts.",
+    p1: "Mitch est l’aîné de quatre enfants d’un parent seul qui a lutté contre la dépendance et le fantôme du trauma générationnel, et qui a tout de même tenté d’aimer. Après la perte de l’autorité parentale, les frères et sœurs ont été placés dans des foyers d’accueil distincts.",
     p2: "Adolescent, il a retrouvé ses frères et sœurs et a été adopté par une famille aimante. Cette séquence — rupture, séparation, retour — continue d’informer la façon dont il s’assoit avec des personnes dont la confiance en soi, en autrui ou en la vie a été blessée.",
     p3: "Il a obtenu son diplôme d’Oregon State University après des études de botanique, puis a travaillé à l’international sur la génétique de la résilience. Il est revenu aux États-Unis pour apprendre la médecine fonctionnelle à Portland, a terminé les soins infirmiers à l’University of Miami, s’est formé aux soins critiques à l’University of Kentucky et a enseigné ce travail à l’échelle nationale. Le troisième cycle a suivi à Gonzaga University.",
     p4: "Le trauma, l’anxiété et la dépression sévère stressent le système nerveux. Les soins psychiatriques, la pharmacogénétique et les compléments sur mesure sont utilisés ensemble pour restaurer la régulation. L’objectif est la fonction : sommeil, travail et relations qui tiennent.",
@@ -245,22 +252,23 @@ export const fr: Dictionary = {
       gonzaga: { place: "Gonzaga", note: "Psychiatrie de troisième cycle" },
     },
     portrait: "Portrait bientôt",
-    portraitNote: "Les photographies professionnelles de Mitchell iront ici.",
+    portraitNote: "Les photographies professionnelles de Mitch iront ici.",
   },
   start: {
     eyebrow: "Nouveaux patients",
     title: "Comment commencer.",
-    lede: "Un bref appel d’adéquation si vous en voulez un. Puis l’admission. Puis la première heure.",
+    lede: "Choisissez un rendez-vous ci-dessous et remplissez l’admission sécurisée.",
     begin: "Commencer l’admission",
     ready: "Lorsque vous êtes prêt",
     beginHeading: "Commencez l’admission.",
+    loading: "Chargement sécurisé…",
     beginReady:
       "Le formulaire s’ouvre dans une fenêtre sécurisée. Accordez-lui la même attention qu’à la première séance.",
     beginSoon:
       "Le formulaire sécurisé s’ouvre depuis ce bouton lorsque le lien est actif. Le courriel est pour la logistique, pas un substitut d’une évaluation.",
     meta: "Paiement privé · Échelle mobile · Superbill après une visite",
     rates: "Tarifs et facturation",
-    telehealth: "Télésanté dans l’État de Washington",
+    telehealth: "Télésanté dans les États de Washington et de l’Idaho",
     chapters: [
       {
         title: "Un bref appel, si vous le souhaitez.",
@@ -268,7 +276,7 @@ export const fr: Dictionary = {
       },
       {
         title: "La première heure dure 75–90 minutes.",
-        body: "Histoire, un nom soigneux lorsqu’il est exact, et un plan. Les visites de suivi durent soixante minutes — médication et thérapie dans la même heure. Pour la vidéo, vous avez besoin d’une pièce privée, d’une connexion stable et d’être physiquement dans l’État de Washington.",
+        body: "Histoire, un nom soigneux lorsqu’il est exact, et un plan. Les visites de suivi durent soixante minutes — médication et thérapie dans la même heure. Pour la vidéo, vous avez besoin d’une pièce privée, d’une connexion stable et d’être physiquement dans l’État de Washington ou de l’Idaho.",
       },
       {
         title: "L’admission, puis nous prenons rendez-vous.",
@@ -289,7 +297,7 @@ export const fr: Dictionary = {
       },
       {
         q: "Puis-je être vu en vidéo ?",
-        a: "Oui, si vous êtes physiquement dans l’État de Washington pour le rendez-vous. Les séances restent de soixante minutes. Vous aurez besoin d’une pièce privée et d’une connexion stable.",
+        a: "Oui, si vous êtes physiquement dans l’État de Washington ou de l’Idaho pour le rendez-vous. Les séances restent de soixante minutes. Vous aurez besoin d’une pièce privée et d’une connexion stable.",
       },
       {
         q: "Ce que je partage est-il confidentiel ?",
@@ -305,7 +313,7 @@ export const fr: Dictionary = {
     eyebrow: "Patients déjà suivis",
     title: "Espace patient.",
     lede: "Si vous recevez déjà des soins ici, voici la porte du retour.",
-    body: "Les nouveaux patients commencent à Devenir patient. Si vous avez déjà un dossier, connectez-vous au portail lorsque le lien sera en ligne.",
+    body: "Les nouveaux patients commencent à Devenir patient. Les patients déjà suivis peuvent se connecter ci-dessous.",
     login: "Se connecter",
     soon: "Le lien du portail patient se trouvera ici. D’ici là, écrivez au cabinet pour la logistique des patients déjà suivis.",
   },
@@ -319,8 +327,8 @@ export const fr: Dictionary = {
     location: "Lieu",
     hours: "Horaires",
     begin: "Comment commencer",
-    beginBody: "Basé à Spokane. Télésanté dans l’État de Washington.",
-    hoursValue: "Sur rendez-vous · télésanté dans l’État de Washington",
+    beginBody: "Basé à Spokane. Télésanté dans les États de Washington et de l’Idaho.",
+    hoursValue: "Lun–Sam · 7 h–19 h · télésanté dans les États de Washington et de l’Idaho",
   },
   billing: {
     eyebrow: "Honoraires",
@@ -418,10 +426,10 @@ export const fr: Dictionary = {
   },
   telehealth: {
     eyebrow: "Soins",
-    title: "Télésanté dans l’État de Washington.",
+    title: "Télésanté dans les États de Washington et de l’Idaho.",
     lede: "Les visites virtuelles sont des heures ordinaires, pas une version moindre du travail. Le consentement se signe dans le dossier d’admission, pas sur cette page.",
-    p1: "Les séances restent de soixante minutes. Vous aurez besoin d’une pièce privée, d’une connexion stable, et d’être physiquement dans l’État de Washington pour le rendez-vous. Les plans en personne suivent l’adresse sur Contact lorsque cette adresse est réelle.",
-    p2: "Le consentement éclairé de télésanté fera partie du dossier PracticeQ / IntakeQ. Cette page explique que le consentement existe. Elle ne le recueille pas.",
+    p1: "Les séances restent de soixante minutes. Vous aurez besoin d’une pièce privée, d’une connexion stable, et d’être physiquement dans l’État de Washington ou de l’Idaho pour le rendez-vous. Les visites en personne ont lieu au 140 S. Arthur Street, Spokane.",
+    p2: "Le consentement éclairé de télésanté fait partie du dossier d’admission IntakeQ. Cette page explique que le consentement existe. Elle ne le recueille pas.",
   },
   insights: {
     eyebrow: "Ressources",
@@ -483,7 +491,7 @@ export const fr: Dictionary = {
       title: "Ce que vous écrivez ici est traité comme une information de santé.",
       lede: "Un avis général. L’NPP HIPAA et la politique de données de santé de Washington vivent sur leurs propres URL.",
       p1: "Ce site public est informatif. Il n’utilise pas de cookies publicitaires, de Meta Pixel ni de Google Analytics. Nous ne vendons pas les informations recueillies ici.",
-      p2: "Remplir une admission (une fois PracticeQ lié) crée un dossier dans ce système clinique — pas sur ce site de marketing. N’envoyez pas d’urgences par courriel.",
+      p2: "Remplir l’admission dans le formulaire sécurisé IntakeQ crée un dossier dans ce système clinique — pas sur ce site public. N’envoyez pas d’urgences par courriel.",
       nppLink: "Avis de pratiques de confidentialité HIPAA",
       healthLink: "Politique de confidentialité des données de santé du consommateur (Washington)",
       termsLink: "Conditions d’utilisation",
@@ -492,20 +500,20 @@ export const fr: Dictionary = {
       eyebrow: "Mentions légales",
       title: "Conditions d’utilisation.",
       lede: "Ce site est informatif. Il ne crée pas de relation soignant–patient.",
-      p1: "En utilisant {name} en ligne, vous acceptez que le contenu soit éducatif, non un avis médical, et non un substitut à une évaluation. L’admission, lorsque le formulaire PracticeQ sera en ligne, est la porte vers les soins.",
+      p1: "En utilisant {name} en ligne, vous acceptez que le contenu soit éducatif, non un avis médical, et non un substitut à une évaluation. L’admission sécurisée est la porte vers les soins.",
       p2: "Des titres exacts sont utilisés partout : {provider}. Rien sur ce site n’implique un titre de médecin.",
     },
     npp: {
       eyebrow: "Mentions légales",
       title: "Avis de pratiques de confidentialité.",
-      lede: "Mitchell fournira l’NPP HIPAA définitif. D’ici là, traitez l’information clinique comme protégée.",
-      p1: "Northform Psychiatry publiera un Avis de pratiques de confidentialité conforme à la règle de confidentialité HIPAA. Cette page est l’URL permanente. L’avis complet remplace ce substitut lorsque le conseil et Mitchell l’auront approuvé.",
+      lede: "Mitch fournira l’NPP HIPAA définitif. D’ici là, traitez l’information clinique comme protégée.",
+      p1: "Northform Psychiatry publiera un Avis de pratiques de confidentialité conforme à la règle de confidentialité HIPAA. Cette page est l’URL permanente. L’avis complet remplace ce substitut lorsque le conseil et Mitch l’auront approuvé.",
       p2: "Jusqu’à ce que ce document soit en vigueur : l’information clinique n’est pas utilisée pour le marketing, n’est pas vendue et n’est pas discutée à la légère. Remplir une admission (une fois PracticeQ lié) crée un dossier dans ce système — pas sur ce site public.",
     },
     healthData: {
       eyebrow: "Mentions légales",
       title: "Données de santé du consommateur.",
-      lede: "Exigé à Washington, distinct de HIPAA. Mitchell fournira la politique définitive. Cette URL est déjà liée depuis la page d’accueil et le pied de page.",
+      lede: "Exigé à Washington, distinct de HIPAA. Mitch fournira la politique définitive. Cette URL est déjà liée depuis la page d’accueil et le pied de page.",
       p1: "La loi My Health My Data de Washington demande une Politique de confidentialité des données de santé du consommateur distincte de l’avis général. Les PHI traitées en tant qu’entité couverte relèvent de HIPAA. Les données de santé non PHI qu’un site peut recueillir auprès de visiteurs occasionnels n’en relèvent pas. Cette page couvre cette seconde catégorie.",
       p2: "Ce site public n’utilise pas de cookies publicitaires, de Meta Pixel ni de Google Analytics standard. Il ne vend pas de données de santé du consommateur. Lorsque la politique définitive arrivera, elle nommera ce qui est recueilli, pourquoi, avec qui cela est partagé, et comment retirer le consentement.",
       p3: "L’admission via PracticeQ, une fois liée, est un système clinique — pas ce site de marketing.",

@@ -22,7 +22,7 @@ export function IntentSelect() {
         router.push(href);
       }}
     >
-      <p className="text-[0.82rem] font-medium text-parchment">How can we help you today?</p>
+      <p className="text-[0.82rem] font-medium text-fg">How can we help you today?</p>
       <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center">
         <label className="sr-only" htmlFor="intent-select">
           I would like to
@@ -31,17 +31,17 @@ export function IntentSelect() {
           id="intent-select"
           value={href}
           onChange={(event) => setHref(event.target.value)}
-          className="h-12 w-full min-w-0 flex-1 border border-parchment/25 bg-pine-deep/80 px-4 text-[0.95rem] text-parchment outline-none focus-visible:border-parchment"
+          className="h-12 w-full min-w-0 flex-1 border border-fg/25 bg-ground/80 px-4 text-[0.95rem] text-fg outline-none focus-visible:border-fg"
         >
           {options.map((option) => (
-            <option key={option.value} value={option.value} className="bg-pine-deep text-parchment">
+            <option key={option.value} value={option.value} className="bg-ground text-fg">
               I would like to {option.label.toLowerCase()}
             </option>
           ))}
         </select>
         <button
           type="submit"
-          className="h-12 shrink-0 bg-parchment px-8 text-[0.8rem] tracking-[0.08em] text-pine hover:bg-parchment-deep"
+          className="h-12 shrink-0 bg-fg px-8 text-[0.8rem] tracking-[0.08em] text-ground hover:bg-fg/85"
         >
           Go
         </button>

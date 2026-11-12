@@ -31,7 +31,7 @@ export const en = {
     nondiscrimination: "Nondiscrimination",
   },
   footer: {
-    hours: "telehealth in Washington",
+    hours: "telehealth in Washington and Idaho",
     crisis:
       "If this is an emergency, call {emergency}. For mental health crisis support in the United States, call or text {line}.",
     photos:
@@ -47,16 +47,22 @@ export const en = {
   crisis:
     "If this is an emergency, call {emergency}. For mental health crisis support in the United States, call or text {line}. This site is not a crisis service.",
   credentials: {
-    telehealth: "Telehealth in Washington",
+    telehealth: "Telehealth in Washington and Idaho",
     npiSoon: "NPI forthcoming",
   },
   hero: {
     tagline: "Sixty minutes. A name. A plan.",
     h1: "Psychiatric care with time to see you.",
-    lede: "Sixty Minutes, A Name, A Plan.",
+    lede: "Evaluation, prescribing, and psychotherapy in the same unhurried hour — guided by pharmacogenomics, with a psychiatric nurse practitioner in Spokane.",
+    facts: [
+      { label: "First visit", value: "75–90 minutes" },
+      { label: "Every follow-up", value: "Sixty minutes" },
+      { label: "Where", value: "Spokane · telehealth in Washington and Idaho" },
+      { label: "Payment", value: "Cash-pay · Superbill" },
+    ],
     treat: "What we treat",
     spokane: "Spokane",
-    telehealth: "Telehealth in Washington",
+    telehealth: "Telehealth in Washington and Idaho",
   },
   treat: {
     titleBefore: "What we",
@@ -78,7 +84,7 @@ export const en = {
         title: "Trauma and reintegration",
         kicker: "Occupational · Social · Cultural",
         what: "What remains after the event: a workplace that broke trust, a unit that never staffed safely, returning from abroad, cultural displacement.",
-        how: "Psychotherapy, sleep, genomic clues, EMDR when it is the right instrument, and medication aimed at function — a job, a home, a friend — not only the flashback.",
+        how: "Psychotherapy, sleep, genomic clues, and medication aimed at function — a job, a home, a friend — not only the flashback.",
         link: "PTSD and trauma",
       },
       identity: {
@@ -113,7 +119,7 @@ export const en = {
         title: "Care for those who care",
         kicker: "Confidential",
         what: "Healthcare professionals and first responders who cannot afford a public waiting room.",
-        how: "The same sixty-minute psychiatry, including medication-assisted treatment when it is indicated. Discretion is part of the medicine.",
+        how: "The same sixty-minute psychiatry, with discretion built in. Medication-assisted treatment opens in January 2027.",
         link: "Become a patient",
       },
       "service-animal": {
@@ -209,9 +215,10 @@ export const en = {
       clue: "The report is a clue for the hour, never the whole map. Other medicines, age, and the liver can imitate a gene. A medicine that is already working is not automatically wrong because a page marked it.",
       sketch: "A teaching sketch of pharmacogenomics in this practice. Not your report, and not a result.",
     },
+    practicalKicker: "Before the first hour",
     providerLede:
       "Botany at Oregon State, genetics research, functional medicine, nursing, critical care, then graduate psychiatry. He is building a small private practice.",
-    aboutMitchell: "About Mitchell",
+    aboutMitch: "About Mitch",
     firstVisitTitle: "The first visit is 75–90 minutes.",
     firstVisitBody:
       "You will not be rushed. A brief fit call is free if you want to hear the voice before you commit. Then the intake — and if it is a fit, we schedule.",
@@ -222,7 +229,7 @@ export const en = {
       "Self-pay is a choice, so the hour stays yours. A superbill is available after a visit if you want to seek out-of-network reimbursement.",
     rates: "Rates",
     telehealthBand:
-      "Virtual visits are ordinary sixty-minute hours. You need to be in Washington.",
+      "Virtual visits are ordinary sixty-minute hours. You need to be in Washington or Idaho.",
     telehealthLink: "Telehealth →",
   },
   cta: {
@@ -232,9 +239,9 @@ export const en = {
   },
   about: {
     eyebrow: "About",
-    title: "Mitchell Corbet, PMHNP-BC.",
+    title: "Mitch Corbet, PMHNP-BC.",
     lede: "{name} is building Northform as a small private practice — psychiatric care, pharmacogenomics, and tailored supplementation.",
-    p1: "Mitchell is the eldest of four children of an embattled single parent who fought the disease of addiction and the ghost of generational trauma, and who still tried to love. After the loss of parental rights, the siblings were placed in separate foster homes.",
+    p1: "Mitch is the eldest of four children of an embattled single parent who fought the disease of addiction and the ghost of generational trauma, and who still tried to love. After the loss of parental rights, the siblings were placed in separate foster homes.",
     p2: "As a teenager he was reunited with his brothers and sisters and adopted by a family that was loving and nurturing. That sequence — rupture, separation, return — still informs how he sits with people whose trust in themselves, in others, or in life has been wounded.",
     p3: "He graduated from Oregon State University after studying botany, then worked internationally on the genetics of resilience. He returned to the United States to learn functional medicine in Portland, completed nursing school at the University of Miami, trained in critical care at the University of Kentucky, and taught that work nationally. Graduate study followed at Gonzaga University.",
     p4: "Trauma, anxiety, and severe depression stress the nervous system. Psychiatric care, pharmacogenomics, and tailored supplements are used together to restore regulation. The goal is function: sleep, work, and relationships that can hold.",
@@ -244,22 +251,23 @@ export const en = {
       gonzaga: { place: "Gonzaga", note: "Graduate psychiatry" },
     },
     portrait: "Portrait forthcoming",
-    portraitNote: "Professional photographs of Mitchell will sit here.",
+    portraitNote: "Professional photographs of Mitch will sit here.",
   },
   start: {
     eyebrow: "New patients",
     title: "How to begin.",
-    lede: "A brief fit call if you want one. Then the intake. Then the first hour.",
+    lede: "Choose a visit below and complete the secure intake.",
     begin: "Begin intake",
     ready: "When you are ready",
     beginHeading: "Begin the intake.",
+    loading: "Loading securely…",
     beginReady:
       "The form opens in a secure window. Give it the same attention you would give the first session.",
     beginSoon:
       "The secure form opens from this button when the live link is in. Email is for logistics, not a substitute for an evaluation.",
     meta: "Cash-pay · Sliding scale · Superbill after a visit",
     rates: "Rates and billing",
-    telehealth: "Telehealth in Washington",
+    telehealth: "Telehealth in Washington and Idaho",
     chapters: [
       {
         title: "A short call, if you want one.",
@@ -267,7 +275,7 @@ export const en = {
       },
       {
         title: "The first hour is 75–90 minutes.",
-        body: "History, a careful name when it is accurate, and a plan. Follow-up visits are sixty minutes — medication and therapy in the same hour. For video, you need a private room, a stable connection, and to be physically in Washington.",
+        body: "History, a careful name when it is accurate, and a plan. Follow-up visits are sixty minutes — medication and therapy in the same hour. For video, you need a private room, a stable connection, and to be physically in Washington or Idaho.",
       },
       {
         title: "The intake, then we schedule.",
@@ -288,7 +296,7 @@ export const en = {
       },
       {
         q: "Can I be seen by video?",
-        a: "Yes, if you are physically in Washington for the appointment. Sessions remain sixty minutes. You will need a private room and a stable connection.",
+        a: "Yes, if you are physically in Washington or Idaho for the appointment. Sessions remain sixty minutes. You will need a private room and a stable connection.",
       },
       {
         q: "Is what I share confidential?",
@@ -304,7 +312,7 @@ export const en = {
     eyebrow: "Returning patients",
     title: "Patient login.",
     lede: "If you already receive care here, this is the door back in.",
-    body: "New patients begin at Become a patient. If you already have a chart, sign in to the portal when the link is live.",
+    body: "New patients begin at Become a patient. Returning patients can sign in below.",
     login: "Sign in",
     soon: "The patient portal link will sit here. Until then, email the practice for returning-patient logistics.",
   },
@@ -318,8 +326,8 @@ export const en = {
     location: "Location",
     hours: "Hours",
     begin: "How to begin",
-    beginBody: "Based in Spokane. Telehealth in Washington.",
-    hoursValue: "By appointment · telehealth in Washington",
+    beginBody: "Based in Spokane. Telehealth in Washington and Idaho.",
+    hoursValue: "Mon–Sat · 7:00 am–7:00 pm · telehealth in Washington and Idaho",
   },
   billing: {
     eyebrow: "Billing",
@@ -417,10 +425,10 @@ export const en = {
   },
   telehealth: {
     eyebrow: "Care",
-    title: "Telehealth in Washington.",
+    title: "Telehealth in Washington and Idaho.",
     lede: "Virtual visits are ordinary hours, not a lesser version of the work. Consent is signed in the intake packet, not on this page.",
-    p1: "Sessions remain sixty minutes. You will need a private room, a stable connection, and to be physically located in Washington for the appointment. In-person plans follow the address on Contact when that address is real.",
-    p2: "Telehealth informed consent will be part of the PracticeQ / IntakeQ packet. This page explains that the consent exists. It does not collect it.",
+    p1: "Sessions remain sixty minutes. You will need a private room, a stable connection, and to be physically located in Washington or Idaho for the appointment. In-person visits are at 140 S. Arthur Street, Spokane.",
+    p2: "Telehealth informed consent is part of the IntakeQ intake packet. This page explains that the consent exists. It does not collect it.",
   },
   insights: {
     eyebrow: "Insights",
@@ -482,7 +490,7 @@ export const en = {
       title: "What you write here is treated as health information.",
       lede: "A general notice. The HIPAA NPP and the Washington consumer health-data policy live on their own URLs.",
       p1: "This public website is informational. It does not use advertising cookies, Meta Pixel, or Google Analytics. We do not sell information collected here.",
-      p2: "Completing an intake (once PracticeQ is linked) creates a record inside that clinical system — not on this marketing site. Do not send emergencies by email.",
+      p2: "Completing an intake through the secure IntakeQ form creates a record inside that clinical system — not on this public website. Do not send emergencies by email.",
       nppLink: "HIPAA Notice of Privacy Practices",
       healthLink: "Consumer Health Data Privacy Policy (Washington)",
       termsLink: "Terms of use",
@@ -491,20 +499,20 @@ export const en = {
       eyebrow: "Legal",
       title: "Terms of use.",
       lede: "This website is informational. It does not create a provider–patient relationship.",
-      p1: "By using {name} online you agree that the content is educational, not medical advice, and not a substitute for evaluation. Intake, when the PracticeQ form is live, is the door into care.",
+      p1: "By using {name} online you agree that the content is educational, not medical advice, and not a substitute for evaluation. The secure intake is the door into care.",
       p2: "Accurate credentials are used throughout: {provider}. Nothing on this site implies a physician title.",
     },
     npp: {
       eyebrow: "Legal",
       title: "Notice of Privacy Practices.",
-      lede: "Mitchell will provide the final HIPAA NPP. Until then, treat clinical information as protected.",
-      p1: "Northform Psychiatry will post a Notice of Privacy Practices consistent with the HIPAA Privacy Rule. This page is the permanent URL. The full notice replaces this placeholder when counsel and Mitchell approve it.",
+      lede: "Mitch will provide the final HIPAA NPP. Until then, treat clinical information as protected.",
+      p1: "Northform Psychiatry will post a Notice of Privacy Practices consistent with the HIPAA Privacy Rule. This page is the permanent URL. The full notice replaces this placeholder when counsel and Mitch approve it.",
       p2: "Until that document is live: clinical information is not used for marketing, not sold, and not discussed casually. Completing an intake (once PracticeQ is linked) creates a record inside that system — not on this public website.",
     },
     healthData: {
       eyebrow: "Legal",
       title: "Consumer health data.",
-      lede: "Required in Washington, distinct from HIPAA. Mitchell will provide the final policy. This URL is already linked from the homepage and the footer.",
+      lede: "Required in Washington, distinct from HIPAA. Mitch will provide the final policy. This URL is already linked from the homepage and the footer.",
       p1: "The Washington My Health My Data Act asks for a Consumer Health Data Privacy Policy separate from a general privacy notice. PHI handled as a covered entity is a HIPAA matter. Non-PHI health data a website may collect from casual visitors is not. This page covers that second category.",
       p2: "This public site does not run advertising cookies, Meta Pixel, or standard Google Analytics. It does not sell consumer health data. When the final policy arrives, it will name what is collected, why, who it is shared with, and how to withdraw consent.",
       p3: "Intake through PracticeQ, once linked, is a clinical system — not this marketing site.",

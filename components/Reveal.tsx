@@ -7,22 +7,21 @@ export function Reveal({
   children,
   className,
   delay = 0,
+  variant = "rise",
+  as: Tag = "div",
 }: {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+  variant?: "rise" | "media" | "rule";
+  as?: "div" | "li" | "section" | "figure";
 }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const node = ref.current;
-    if (!node) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisible(true);
-      return;
-    }
+    if (!node || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -31,24 +30,27 @@ export function Reveal({
           observer.disconnect();
         }
       },
-      { threshold: 0.05, rootMargin: "80px 0px" },
+      { threshold: 0.12, rootMargin: "0px 0px -6% 0px" },
     );
 
     observer.observe(node);
-    if (node.getBoundingClientRect().top < window.innerHeight) {
-      setVisible(true);
-    }
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div
-      ref={ref}
-      className={cn("reveal", visible && "in", className)}
-      style={{ transitionDelay: `${delay}ms` }}
+    <Tag
+      ref={ref as React.Ref<never>}
+      className={cn(
+        "reveal",
+        variant === "media" && "is-media",
+        variant === "rule" && "is-rule",
+        visible && "in",
+        className,
+      )}
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       {children}
-    </div>
+    </Tag>
   );
 }
 

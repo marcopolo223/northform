@@ -32,7 +32,7 @@ export const es: Dictionary = {
     nondiscrimination: "No discriminación",
   },
   footer: {
-    hours: "telesalud en Washington",
+    hours: "telesalud en Washington e Idaho",
     crisis:
       "Si es una emergencia, llame al {emergency}. Para apoyo en crisis de salud mental en Estados Unidos, llame o envíe un mensaje al {line}.",
     photos:
@@ -48,16 +48,22 @@ export const es: Dictionary = {
   crisis:
     "Si es una emergencia, llame al {emergency}. Para apoyo en crisis de salud mental en Estados Unidos, llame o envíe un mensaje al {line}. Este sitio no es un servicio de crisis.",
   credentials: {
-    telehealth: "Telesalud en Washington",
+    telehealth: "Telesalud en Washington e Idaho",
     npiSoon: "NPI próximamente",
   },
   hero: {
     tagline: "Sesenta minutos. Un nombre. Un plan.",
     h1: "Cuidado psiquiátrico con tiempo para verle.",
-    lede: "Sesenta minutos, un nombre, un plan.",
+    lede: "Evaluación, prescripción y psicoterapia en la misma hora sin prisas — guiadas por la farmacogenómica, con un enfermero practicante psiquiátrico en Spokane.",
+    facts: [
+      { label: "Primera visita", value: "75–90 minutos" },
+      { label: "Cada seguimiento", value: "Sesenta minutos" },
+      { label: "Dónde", value: "Spokane · telesalud en Washington e Idaho" },
+      { label: "Pago", value: "Pago particular · Superbill" },
+    ],
     treat: "Qué tratamos",
     spokane: "Spokane",
-    telehealth: "Telesalud en Washington",
+    telehealth: "Telesalud en Washington e Idaho",
   },
   treat: {
     titleBefore: "Qué",
@@ -79,7 +85,7 @@ export const es: Dictionary = {
         title: "Trauma y reintegración",
         kicker: "Ocupacional · Social · Cultural",
         what: "Lo que queda después del suceso: un trabajo que rompió la confianza, una unidad sin personal suficiente, el regreso del extranjero, el desplazamiento cultural.",
-        how: "Psicoterapia, sueño, pistas genómicas, EMDR cuando es el instrumento adecuado, y medicación orientada a la función — un trabajo, un hogar, un amigo — no solo el flashback.",
+        how: "Psicoterapia, sueño, pistas genómicas y medicación orientada a la función — un trabajo, un hogar, un amigo — no solo el flashback.",
         link: "TEPT y trauma",
       },
       identity: {
@@ -114,7 +120,7 @@ export const es: Dictionary = {
         title: "Cuidado para quien cuida",
         kicker: "Confidencial",
         what: "Profesionales de la salud y primeros respondedores que no pueden permitirse una sala de espera pública.",
-        how: "La misma psiquiatría de sesenta minutos, incluido el tratamiento asistido con medicación cuando está indicado. La discreción forma parte de la medicina.",
+        how: "La misma psiquiatría de sesenta minutos, con la discreción incluida. El tratamiento asistido con medicación abre en enero de 2027.",
         link: "Hacerse paciente",
       },
       "service-animal": {
@@ -210,9 +216,10 @@ export const es: Dictionary = {
       clue: "El informe es una pista para la hora, nunca el mapa entero. Otros fármacos, la edad y el hígado pueden imitar un gen. Un medicamento que ya funciona no está automáticamente mal porque una página lo marcó.",
       sketch: "Un esquema de la farmacogenómica en esta práctica. No es su informe, ni un resultado.",
     },
+    practicalKicker: "Antes de la primera hora",
     providerLede:
       "Botánica en Oregon State, investigación en genética, medicina funcional, enfermería, cuidados críticos y luego psiquiatría de posgrado. Está construyendo una consulta privada pequeña.",
-    aboutMitchell: "Sobre Mitchell",
+    aboutMitch: "Sobre Mitch",
     firstVisitTitle: "La primera visita dura 75–90 minutos.",
     firstVisitBody:
       "No le van a apurar. Una breve llamada de encaje es gratuita si quiere oír la voz antes de comprometerse. Luego la admisión — y si encaja, agendamos.",
@@ -223,7 +230,7 @@ export const es: Dictionary = {
       "El pago particular es una elección, para que la hora le pertenezca. Después de una visita hay un superbill si desea buscar reembolso fuera de red.",
     rates: "Honorarios",
     telehealthBand:
-      "Las visitas virtuales son horas ordinarias de sesenta minutos. Debe estar en Washington.",
+      "Las visitas virtuales son horas ordinarias de sesenta minutos. Debe estar en Washington o Idaho.",
     telehealthLink: "Telesalud →",
   },
   cta: {
@@ -233,9 +240,9 @@ export const es: Dictionary = {
   },
   about: {
     eyebrow: "Acerca de",
-    title: "Mitchell Corbet, PMHNP-BC.",
+    title: "Mitch Corbet, PMHNP-BC.",
     lede: "{name} está construyendo Northform como una consulta privada pequeña — cuidado psiquiátrico, farmacogenómica y suplementación a medida.",
-    p1: "Mitchell es el mayor de cuatro hijos de un padre o madre solo que luchó contra la adicción y el fantasma del trauma generacional, y que aun así intentó amar. Tras la pérdida de la patria potestad, los hermanos fueron colocados en hogares de acogida distintos.",
+    p1: "Mitch es el mayor de cuatro hijos de un padre o madre solo que luchó contra la adicción y el fantasma del trauma generacional, y que aun así intentó amar. Tras la pérdida de la patria potestad, los hermanos fueron colocados en hogares de acogida distintos.",
     p2: "De adolescente se reunió con sus hermanos y fue adoptado por una familia amorosa. Esa secuencia — ruptura, separación, retorno — sigue informando cómo se sienta con personas cuya confianza en sí mismas, en otros o en la vida ha sido herida.",
     p3: "Se graduó de Oregon State University tras estudiar botánica, luego trabajó internacionalmente en la genética de la resiliencia. Volvió a Estados Unidos para aprender medicina funcional en Portland, completó enfermería en la University of Miami, se formó en cuidados críticos en la University of Kentucky y enseñó ese trabajo a nivel nacional. El posgrado siguió en Gonzaga University.",
     p4: "El trauma, la ansiedad y la depresión grave estresan el sistema nervioso. El cuidado psiquiátrico, la farmacogenómica y los suplementos a medida se usan juntos para restaurar la regulación. El objetivo es la función: sueño, trabajo y relaciones que puedan sostenerse.",
@@ -245,22 +252,23 @@ export const es: Dictionary = {
       gonzaga: { place: "Gonzaga", note: "Psiquiatría de posgrado" },
     },
     portrait: "Retrato próximamente",
-    portraitNote: "Las fotografías profesionales de Mitchell irán aquí.",
+    portraitNote: "Las fotografías profesionales de Mitch irán aquí.",
   },
   start: {
     eyebrow: "Pacientes nuevos",
     title: "Cómo empezar.",
-    lede: "Una breve llamada de encaje si la quiere. Luego la admisión. Luego la primera hora.",
+    lede: "Elija una cita abajo y complete la admisión segura.",
     begin: "Comenzar admisión",
     ready: "Cuando esté listo",
     beginHeading: "Comience la admisión.",
+    loading: "Cargando de forma segura…",
     beginReady:
       "El formulario se abre en una ventana segura. Dedíquele la misma atención que a la primera sesión.",
     beginSoon:
       "El formulario seguro se abre desde este botón cuando el enlace esté activo. El correo es para logística, no un sustituto de una evaluación.",
     meta: "Pago particular · Escala móvil · Superbill después de una visita",
     rates: "Tarifas y facturación",
-    telehealth: "Telesalud en Washington",
+    telehealth: "Telesalud en Washington e Idaho",
     chapters: [
       {
         title: "Una llamada breve, si la desea.",
@@ -268,7 +276,7 @@ export const es: Dictionary = {
       },
       {
         title: "La primera hora dura 75–90 minutos.",
-        body: "Historia, un nombre cuidadoso cuando es exacto, y un plan. Las visitas de seguimiento son de sesenta minutos — medicación y terapia en la misma hora. Para video, necesita un cuarto privado, una conexión estable y estar físicamente en Washington.",
+        body: "Historia, un nombre cuidadoso cuando es exacto, y un plan. Las visitas de seguimiento son de sesenta minutos — medicación y terapia en la misma hora. Para video, necesita un cuarto privado, una conexión estable y estar físicamente en Washington o Idaho.",
       },
       {
         title: "La admisión, luego agendamos.",
@@ -289,7 +297,7 @@ export const es: Dictionary = {
       },
       {
         q: "¿Puedo ser atendido por video?",
-        a: "Sí, si está físicamente en Washington para la cita. Las sesiones siguen siendo de sesenta minutos. Necesitará un cuarto privado y una conexión estable.",
+        a: "Sí, si está físicamente en Washington o Idaho para la cita. Las sesiones siguen siendo de sesenta minutos. Necesitará un cuarto privado y una conexión estable.",
       },
       {
         q: "¿Lo que comparto es confidencial?",
@@ -305,7 +313,7 @@ export const es: Dictionary = {
     eyebrow: "Pacientes actuales",
     title: "Acceso de pacientes.",
     lede: "Si ya recibe cuidado aquí, esta es la puerta de vuelta.",
-    body: "Los pacientes nuevos comienzan en Hacerse paciente. Si ya tiene una historia, entre al portal cuando el enlace esté activo.",
+    body: "Los pacientes nuevos comienzan en Hacerse paciente. Los pacientes actuales pueden entrar abajo.",
     login: "Entrar",
     soon: "El enlace del portal de pacientes irá aquí. Hasta entonces, escriba al consultorio para la logística de pacientes actuales.",
   },
@@ -319,8 +327,8 @@ export const es: Dictionary = {
     location: "Ubicación",
     hours: "Horario",
     begin: "Cómo empezar",
-    beginBody: "Con sede en Spokane. Telesalud en Washington.",
-    hoursValue: "Con cita · telesalud en Washington",
+    beginBody: "Con sede en Spokane. Telesalud en Washington e Idaho.",
+    hoursValue: "Lun–Sáb · 7:00–19:00 · telesalud en Washington e Idaho",
   },
   billing: {
     eyebrow: "Honorarios",
@@ -418,10 +426,10 @@ export const es: Dictionary = {
   },
   telehealth: {
     eyebrow: "Cuidado",
-    title: "Telesalud en Washington.",
+    title: "Telesalud en Washington e Idaho.",
     lede: "Las visitas virtuales son horas ordinarias, no una versión menor del trabajo. El consentimiento se firma en el paquete de admisión, no en esta página.",
-    p1: "Las sesiones siguen siendo de sesenta minutos. Necesitará un cuarto privado, una conexión estable y estar físicamente en Washington para la cita. Los planes presenciales siguen la dirección en Contacto cuando esa dirección sea real.",
-    p2: "El consentimiento informado de telesalud formará parte del paquete de PracticeQ / IntakeQ. Esta página explica que el consentimiento existe. No lo recaba.",
+    p1: "Las sesiones siguen siendo de sesenta minutos. Necesitará un cuarto privado, una conexión estable y estar físicamente en Washington o Idaho para la cita. Las visitas presenciales son en 140 S. Arthur Street, Spokane.",
+    p2: "El consentimiento informado de telesalud forma parte del paquete de admisión de IntakeQ. Esta página explica que el consentimiento existe. No lo recaba.",
   },
   insights: {
     eyebrow: "Recursos",
@@ -483,7 +491,7 @@ export const es: Dictionary = {
       title: "Lo que escribe aquí se trata como información de salud.",
       lede: "Un aviso general. El NPP de HIPAA y la política de datos de salud de Washington viven en sus propias URL.",
       p1: "Este sitio público es informativo. No usa cookies de publicidad, Meta Pixel ni Google Analytics. No vendemos la información recogida aquí.",
-      p2: "Completar una admisión (cuando PracticeQ esté enlazado) crea un registro dentro de ese sistema clínico, no en este sitio de marketing. No envíe emergencias por correo.",
+      p2: "Completar la admisión en el formulario seguro de IntakeQ crea un registro dentro de ese sistema clínico, no en este sitio público. No envíe emergencias por correo.",
       nppLink: "Aviso de prácticas de privacidad HIPAA",
       healthLink: "Política de privacidad de datos de salud del consumidor (Washington)",
       termsLink: "Términos de uso",
@@ -492,20 +500,20 @@ export const es: Dictionary = {
       eyebrow: "Legal",
       title: "Términos de uso.",
       lede: "Este sitio es informativo. No crea una relación proveedor–paciente.",
-      p1: "Al usar {name} en línea usted acepta que el contenido es educativo, no consejo médico, y no sustituye una evaluación. La admisión, cuando el formulario de PracticeQ esté activo, es la puerta a la atención.",
+      p1: "Al usar {name} en línea usted acepta que el contenido es educativo, no consejo médico, y no sustituye una evaluación. La admisión segura es la puerta a la atención.",
       p2: "Se usan credenciales exactas en todo el sitio: {provider}. Nada aquí implica un título de médico.",
     },
     npp: {
       eyebrow: "Legal",
       title: "Aviso de prácticas de privacidad.",
-      lede: "Mitchell aportará el NPP de HIPAA definitivo. Hasta entonces, trate la información clínica como protegida.",
-      p1: "Northform Psychiatry publicará un Aviso de prácticas de privacidad coherente con la Norma de Privacidad de HIPAA. Esta página es la URL permanente. El aviso completo sustituye este marcador cuando lo aprueben el abogado y Mitchell.",
+      lede: "Mitch aportará el NPP de HIPAA definitivo. Hasta entonces, trate la información clínica como protegida.",
+      p1: "Northform Psychiatry publicará un Aviso de prácticas de privacidad coherente con la Norma de Privacidad de HIPAA. Esta página es la URL permanente. El aviso completo sustituye este marcador cuando lo aprueben el abogado y Mitch.",
       p2: "Hasta que ese documento esté en vigor: la información clínica no se usa para marketing, no se vende y no se comenta a la ligera. Completar una admisión (cuando PracticeQ esté enlazado) crea un registro dentro de ese sistema, no en este sitio público.",
     },
     healthData: {
       eyebrow: "Legal",
       title: "Datos de salud del consumidor.",
-      lede: "Exigido en Washington, distinto de HIPAA. Mitchell aportará la política definitiva. Esta URL ya está enlazada desde la portada y el pie.",
+      lede: "Exigido en Washington, distinto de HIPAA. Mitch aportará la política definitiva. Esta URL ya está enlazada desde la portada y el pie.",
       p1: "La ley My Health My Data de Washington pide una Política de privacidad de datos de salud del consumidor aparte del aviso general. La PHI tratada como entidad cubierta es asunto de HIPAA. Los datos de salud no PHI que un sitio puede recoger de visitantes ocasionales no lo son. Esta página cubre esa segunda categoría.",
       p2: "Este sitio público no usa cookies de publicidad, Meta Pixel ni Google Analytics estándar. No vende datos de salud del consumidor. Cuando llegue la política definitiva, nombrará qué se recoge, por qué, con quién se comparte y cómo retirar el consentimiento.",
       p3: "La admisión por PracticeQ, una vez enlazada, es un sistema clínico, no este sitio de marketing.",

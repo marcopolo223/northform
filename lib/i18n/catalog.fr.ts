@@ -83,7 +83,7 @@ export const catalogFr: typeof catalogEn = {
       what: "Ce qui reste dans le système nerveux après que l’événement est fini.",
       how: "Psychothérapie, sommeil et médication tournée vers la fonction — pas seulement le flashback.",
       treatment:
-        "Blessure occupationnelle, déplacement culturel, le retour de l’étranger, une unité qui n’a jamais été assez pourvue : le travail est la régulation et la fonction — un emploi, un foyer, un ami. Psychothérapie, information génomique, compléments lorsqu’ils aident, EMDR lorsqu’il est le bon instrument, et médication conventionnelle tournée vers les symptômes, pas seulement le flashback.",
+        "Blessure occupationnelle, déplacement culturel, le retour de l’étranger, une unité qui n’a jamais été assez pourvue : le travail est la régulation et la fonction — un emploi, un foyer, un ami. Psychothérapie, information génomique, compléments lorsqu’ils aident, et médication conventionnelle tournée vers les symptômes, pas seulement le flashback.",
       answer:
         "Le trauma est ce qui reste dans le système nerveux après que l’événement est fini — blessure occupationnelle, déplacement culturel, le retour de l’étranger, une unité qui n’a jamais été assez pourvue. Le traitement utilise la psychothérapie, l’information génomique, les compléments lorsqu’ils aident, et la médication conventionnelle tournée vers les symptômes et la fonction — pas seulement le flashback.",
       lede: "Soins après un trauma occupationnel, culturel et personnel.",
@@ -91,7 +91,7 @@ export const catalogFr: typeof catalogEn = {
         "La blessure occupationnelle, sociale et culturelle appartient ici. Aussi les cauchemars, la culpabilité, la honte et l’insomnie qui arrivent dans une vie spirituelle. Le but est la régulation et la fonction — un emploi, un foyer, un ami — pas seulement si les hallucinations sont parties.",
       ],
       faq: [
-        { q: "Offrez-vous l’EMDR ?", a: "L’EMDR est l’une des voies de service. S’il est le bon instrument se décide dans l’évaluation, pas comme un article de menu à la porte." },
+        { q: "Offrirez-vous l’EMDR ?", a: "L’EMDR est prévu pour septembre 2027. S’il est le bon instrument se décidera dans l’évaluation, pas comme un article de menu à la porte." },
         { q: "Le trauma professionnel est-il couvert ?", a: "Oui. Les ressources de ce site couvrent aussi le langage FMLA lorsqu’une carrière et un système nerveux ont besoin d’être protégés." },
       ],
     },
@@ -99,11 +99,11 @@ export const catalogFr: typeof catalogEn = {
       slug: "oud",
       title: "Trouble de l’usage d’opioïdes",
       what: "Une condition médicale, pas un verdict moral.",
-      how: "Traitement assisté par médication, avec discrétion lorsqu’elle est requise.",
+      how: "Traitement assisté par médication dès janvier 2027, avec discrétion lorsqu’elle est requise.",
       treatment:
-        "Le traitement assisté par médication est un soin médical ordinaire dans le même cadre de soixante minutes que le reste du cabinet. Vous n’avez pas à nommer un lieu de travail dans la première phrase. Les ordres professionnels et les petites communautés font de la publicité un risque clinique à part entière.",
+        "Le traitement assisté par médication, qui ouvre en janvier 2027, est un soin médical ordinaire dans le même cadre de soixante minutes que le reste du cabinet. Vous n’avez pas à nommer un lieu de travail dans la première phrase. Les ordres professionnels et les petites communautés font de la publicité un risque clinique à part entière.",
       answer:
-        "Le trouble de l’usage d’opioïdes est une condition médicale, pas un verdict moral. Le traitement assisté par médication est disponible, y compris pour les professionnels de santé et les premiers intervenants qui ont besoin de discrétion.",
+        "Le trouble de l’usage d’opioïdes est une condition médicale, pas un verdict moral. Le traitement assisté par médication sera disponible dès janvier 2027, y compris pour les professionnels de santé et les premiers intervenants qui ont besoin de discrétion.",
       lede: "Soins psychiatriques ordinaires, avec discrétion lorsqu’elle est requise.",
       body: [
         "La page publique est clinique à dessein. Les ordres professionnels et les petites communautés font de la publicité un risque clinique à part entière — vous n’avez pas à nommer un lieu de travail dans la première phrase.",
@@ -134,7 +134,7 @@ export const catalogFr: typeof catalogEn = {
       slug: "mat",
       title: "Traitement assisté par médication",
       answer:
-        "Le TAM pour le trouble de l’usage d’opioïdes est un soin médical ordinaire. Il est offert ici dans le même cadre de soixante minutes que le reste du cabinet.",
+        "Le TAM pour le trouble de l’usage d’opioïdes est un soin médical ordinaire. Il sera offert ici dès janvier 2027 dans le même cadre de soixante minutes que le reste du cabinet.",
       lede: "La discrétion fait partie de la médecine.",
       body: [
         "Les professionnels de santé et les premiers intervenants peuvent commencer sans annoncer un lieu de travail. Le chemin public reste l’admission. S’il s’agit d’une urgence, appelez le 911.",
@@ -147,13 +147,13 @@ export const catalogFr: typeof catalogEn = {
       slug: "perinatal",
       title: "Santé mentale périnatale",
       answer:
-        "La grossesse, le post-partum et le changement hormonal peuvent perturber le sommeil, l’humeur et l’attachement. Les soins ici incluent la psychiatrie et, lorsque les symptômes de santé mentale l’exigent, des conversations sur la thérapie hormonale ménopausique et périnatale dans la même visite.",
+        "La grossesse, le post-partum et le changement hormonal peuvent perturber le sommeil, l’humeur et l’attachement. Les soins périnataux ouvrent en mai 2027 et incluront la psychiatrie dans la même visite.",
       lede: "Soins psychiatriques pendant la grossesse, le post-partum et la transition hormonale.",
       body: [
-        "Ceci n’est pas une boutique à part. C’est le même cabinet — diagnostic, prescription, soixante minutes — appliqué à un corps qui change. Les détails cliniques se confirment avec Mitchell ; cette page est une porte, pas un protocole.",
+        "Ceci n’est pas une boutique à part. Ce sera le même cabinet — diagnostic, prescription, soixante minutes — appliqué à un corps qui change. Les détails cliniques se confirment avec Mitch ; cette page est une porte, pas un protocole.",
       ],
       faq: [
-        { q: "Prescrivez-vous pendant la grossesse ?", a: "La prescription est disponible. Ce qui est approprié est une décision clinique au cas par cas, pas une promesse de site web." },
+        { q: "Prescrivez-vous pendant la grossesse ?", a: "La prescription sera disponible à l’ouverture des soins périnataux en mai 2027. Ce qui est approprié est une décision clinique au cas par cas, pas une promesse de site web." },
       ],
     },
     "child-adolescent": {
@@ -173,10 +173,10 @@ export const catalogFr: typeof catalogEn = {
       slug: "emdr",
       title: "EMDR",
       answer:
-        "La désensibilisation et le retraitement par les mouvements oculaires est une façon de travailler avec la mémoire traumatique. Elle est offerte comme une voie de service, pas comme une religion. S’il est le bon instrument se décide après une évaluation.",
+        "La désensibilisation et le retraitement par les mouvements oculaires est une façon de travailler avec la mémoire traumatique. Elle sera offerte comme une voie de service dès septembre 2027, pas comme une religion. S’il est le bon instrument se décide après une évaluation.",
       lede: "Une méthode, lorsque le cas le demande.",
       body: [
-        "Le trauma ici inclut aussi la réintégration occupationnelle et culturelle. L’EMDR s’assoit à côté de la parole, des pistes génomiques et de la médication — jamais à la place d’une heure soigneuse.",
+        "Le trauma ici inclut aussi la réintégration occupationnelle et culturelle. L’EMDR s’assoira à côté de la parole, des pistes génomiques et de la médication — jamais à la place d’une heure soigneuse.",
       ],
       faq: [
         { q: "Chaque cas de trauma est-il de l’EMDR ?", a: "Non. La méthode suit la personne." },
@@ -189,7 +189,7 @@ export const catalogFr: typeof catalogEn = {
         "Les systèmes nerveux qui vieillissent méritent encore soixante minutes. Humeur, cognition, sommeil, polypharmacie, et la dignité d’un emploi, d’un foyer et d’un ami restent la mesure. Les soins sont soigneux avec les médicaments et honnêtes sur ce à quoi ressemble la fonction.",
       lede: "La fonction dans la vie plus tardive, pas seulement des listes de symptômes.",
       body: [
-        "Cette voie fait partie du même cabinet. Des listes médicales complexes et des systèmes familiaux sont attendus. La télésanté dans l’État de Washington est disponible lorsque le déplacement est la barrière.",
+        "Cette voie fait partie du même cabinet. Des listes médicales complexes et des systèmes familiaux sont attendus. La télésanté dans les États de Washington et de l’Idaho est disponible lorsque le déplacement est la barrière.",
       ],
       faq: [
         { q: "Ne voyez-vous les aînés qu’en personne ?", a: "La télésanté est disponible pour les patients dans l’État de Washington. Les plans en personne suivent l’adresse sur Contact." },
@@ -234,29 +234,15 @@ export const catalogFr: typeof catalogEn = {
   fees: {
     rows: [
       { service: "Bref appel d’adéquation", duration: "10–15 min", includes: "Un court appel confidentiel pour voir si Northform est la bonne adéquation avant de vous engager à quoi que ce soit." },
-      { service: "Évaluation psychiatrique complète", duration: "75–90 min", includes: "Une visite diagnostique plus longue avec histoire, dépistages standardisés, et un diagnostic formel lorsqu’il convient." },
-      { service: "Admission de psychiatrie fonctionnelle", duration: "120 min", includes: "Pour humeur, anxiété, TDAH, sommeil, trauma ou stress complexes, chevauchement médical, et longues histoires de médication. Laboratoires facturés à part." },
-      { service: "Psychiatrie intégrée + thérapie de soutien", duration: "60 min — la base Northform", includes: "Gestion de la médication et thérapie dans la même heure." },
-      { service: "Suivi standard de médication", duration: "25–30 min", includes: "Un contrôle de la façon dont un plan de médication fonctionne." },
-      { service: "Suivi prolongé", duration: "45–50 min", includes: "Pour des changements complexes de médication, des effets secondaires, revisiter un diagnostic, ou la prévention de rechute." },
-      { service: "Évaluation TDAH et médication contrôlée", duration: "", includes: "Échelles, revue de dossiers, signes vitaux, contrôle du programme de surveillance des prescriptions (PMP), et un plan. Ceci n’est pas un test neuropsychologique." },
-      { service: "Parcours de stress professionnel", duration: "Professionnels de santé · premiers intervenants · trauma", includes: "Une voie spécialisée aux tarifs standard ci-dessus." },
-      { service: "Soins d’usage de substances concomitant", duration: "Confidentiel · en cabinet", includes: "Traitement médicamenteux en cabinet aux côtés des soins psychiatriques. Pas un programme de méthadone." },
-      { service: "Psychiatrie occupationnelle et retour au travail", duration: "", includes: "Évaluation pour des préoccupations professionnelles, avec rapports et formulaires facturés à l’heure." },
-      { service: "Formulaires, lettres, revue de dossiers et appels collatéraux", duration: "", includes: "Les éléments courts font partie de vos soins. Le travail plus long est facturé par pas de 15 minutes ou coté comme un forfait à l’avance." },
+      { service: "Évaluation psychiatrique", duration: "", includes: "Une visite diagnostique plus longue avec histoire, dépistages standardisés, et un diagnostic formel lorsqu’il convient." },
+      { service: "Suivi de médication", duration: "En personne ou télésanté", includes: "Un contrôle de la façon dont un plan de médication fonctionne." },
+      { service: "Suivi complet", duration: "", includes: "Un suivi plus long pour des changements complexes de médication, des effets secondaires, ou revisiter un diagnostic." },
+      { service: "Évaluation initiale du TDAH", duration: "", includes: "Échelles, revue de dossiers, contrôle du programme de surveillance des prescriptions (PMP), et un plan. Ceci n’est pas un test neuropsychologique." },
+      { service: "Admission au traitement de l’usage de substances", duration: "Confidentiel · en cabinet", includes: "Admission pour un traitement de l’usage de substances aux côtés des soins psychiatriques. Disponible dès janvier 2027." },
+      { service: "Évaluation pour animal d’assistance", duration: "", includes: "Une évaluation psychiatrique à l’appui d’un animal d’assistance, lorsque le tableau clinique le demande." },
+      { service: "Formulaires, lettres et revue de dossiers", duration: "", includes: "Les démarches, lettres et revues de dossiers sont facturées par pas de 15 minutes." },
     ],
-    first: {
-      eval: "Évaluation psychiatrique complète · $325",
-      functional: "Admission de psychiatrie fonctionnelle · $525",
-      adhd: "Évaluation TDAH et médication contrôlée · $350",
-      sud: "Soins d’usage de substances concomitant · $400",
-      occ: "Évaluation de psychiatrie occupationnelle · $375",
-    },
-    follow: {
-      baseline: "Psychiatrie de 60 min + thérapie de soutien · $275",
-      med: "Suivi standard de médication · $175",
-      extended: "Suivi prolongé · $250",
-      "sud-follow": "Suivi d’usage de substances · $180",
-    },
+    first: {"eval":"Évaluation psychiatrique · $350","adhd":"Évaluation initiale du TDAH · $350","sud":"Admission au traitement de l’usage de substances · $400","animal":"Évaluation pour animal d’assistance · $120"},
+    follow: {"med":"Suivi de médication · $175","comprehensive":"Suivi complet · $350"},
   },
 };

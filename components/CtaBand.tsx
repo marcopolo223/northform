@@ -1,42 +1,29 @@
 "use client";
 
-import Link from "next/link";
 import { ButtonLink } from "@/components/ButtonLink";
-import { FrameImage } from "@/components/FrameImage";
+import { Container } from "@/components/Container";
+import { RevealWords } from "@/components/RevealWords";
 import { useLocale } from "@/lib/i18n/locale-provider";
 
 export function CtaBand() {
   const { t } = useLocale();
 
   return (
-    <section className="relative overflow-hidden text-parchment">
-      <FrameImage
-        src="/images/spokane-bowl.jpg"
-        alt=""
-        className="absolute inset-0 min-h-[420px] w-full"
-        sizes="100vw"
-        parallax
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-pine-deep/88 via-pine-deep/70 to-pine-deep/45" aria-hidden />
-      <div className="relative flex items-end px-5 py-16 sm:px-8 lg:px-16 lg:py-24">
-        <div className="rise mx-auto w-full max-w-[1400px]">
-          <div className="max-w-xl">
-            <h2 className="type-title">{t.cta.title}</h2>
-            <p className="type-lede mt-5 text-parchment/85">{t.cta.body}</p>
-            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
-              <ButtonLink href="/start" variant="light">
-                {t.nav.become}
-              </ButtonLink>
-              <Link
-                href="/billing"
-                className="type-ui text-parchment/75 underline-offset-4 hover:text-parchment hover:underline"
-              >
-                {t.cta.billing}
-              </Link>
-            </div>
-          </div>
+    <section className="on-dark overflow-hidden bg-ground">
+      <Container className="grid items-end gap-12 py-16 lg:grid-cols-12 lg:gap-8 lg:py-24">
+        <div className="scale-in origin-left lg:col-span-8">
+          <h2 className="type-display max-w-[12ch] text-fg">
+            <RevealWords text={t.cta.title} />
+          </h2>
+          <p className="type-voice mt-8 max-w-xl text-fg/78">{t.cta.body}</p>
         </div>
-      </div>
+        <div className="flex flex-col gap-5 lg:col-span-4 lg:items-end lg:pb-2">
+          <ButtonLink href="/start">{t.nav.become}</ButtonLink>
+          <ButtonLink href="/billing" variant="ghost">
+            {t.cta.billing}
+          </ButtonLink>
+        </div>
+      </Container>
     </section>
   );
 }

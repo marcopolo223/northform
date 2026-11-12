@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { BecomePatientButton } from "@/components/BecomePatientButton";
+import { TextLink } from "@/components/ButtonLink";
 import { ConditionCards } from "@/components/ConditionCards";
 import { Container } from "@/components/Container";
 import { LocalizedHeader } from "@/components/LocalizedHeader";
@@ -13,18 +13,11 @@ export function ConditionsView() {
 
   return (
     <>
-      <LocalizedHeader section="conditions" image="/images/spokane-river.jpg" imageAlt="The Spokane River winding through ponderosa pines at Riverside State Park" />
-      <Container className="py-10 lg:py-16">
+      <LocalizedHeader section="conditions" />
+      <Container className="py-14 lg:py-20">
         <ConditionCards items={conditions} />
-        <p className="mt-10">
-          <Link
-            href="/#treat"
-            className="type-ui text-parchment/80 underline-offset-4 hover:text-parchment hover:underline"
-          >
-            {t.conditions.treatLink}
-          </Link>
-        </p>
-        <div className="mt-8">
+        <div className="mt-14 flex flex-col gap-8 border-t border-fg/15 pt-10 sm:flex-row sm:items-center sm:justify-between">
+          <TextLink href="/#treat">{t.conditions.treatLink}</TextLink>
           <BecomePatientButton />
         </div>
       </Container>

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FrameImage } from "@/components/FrameImage";
 import { QrCode } from "@/components/QrCode";
-import { site } from "@/site.config";
 
 const lines = [
   "You found north. Breathe here a moment.",
@@ -35,13 +34,12 @@ export function TrueNorth({ qr }: { qr: string }) {
   }, []);
 
   return (
-    <section className="bg-pine-deep text-parchment">
+    <section className="on-dark bg-pine-deep text-parchment">
       <div data-site-hero className="relative h-[62svh] min-h-[420px]">
         <FrameImage
           src="/images/spokane-river.jpg"
           alt=""
           className="h-full w-full"
-          scrim
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
           <div className="north-breath h-40 w-40 rounded-full border border-parchment/50" />

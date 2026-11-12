@@ -25,7 +25,7 @@ export const offerings: ClinicalEntry[] = [
     slug: "mat",
     title: "Medication-assisted treatment",
     answer:
-      "MAT for opioid use disorder is ordinary medical care. It is offered here with the same sixty-minute frame as the rest of the practice.",
+      "MAT for opioid use disorder is ordinary medical care. It will be offered here beginning January 2027, with the same sixty-minute frame as the rest of the practice.",
     lede: "Discretion is part of the medicine.",
     body: [
       "Healthcare professionals and first responders can begin without advertising a workplace. The public path is still the intake. If this is an emergency, call 911.",
@@ -44,13 +44,13 @@ export const offerings: ClinicalEntry[] = [
     slug: "perinatal",
     title: "Perinatal mental health",
     answer:
-      "Pregnancy, postpartum, and hormonal change can disrupt sleep, mood, and attachment. Care here includes psychiatry and, when mental health symptoms require it, conversations about menopausal and perinatal hormone therapy in the same visit.",
+      "Pregnancy, postpartum, and hormonal change can disrupt sleep, mood, and attachment. Perinatal care opens in May 2027 and will include psychiatry in the same visit.",
     lede: "Psychiatric care in pregnancy, postpartum, and hormonal transition.",
     body: [
-      "This is not a separate boutique. It is the same practice — diagnosis, prescribing, sixty minutes — applied to a body that is changing. Clinical details are confirmed with Mitchell; this page is a door, not a protocol.",
+      "This is not a separate boutique. It will be the same practice — diagnosis, prescribing, sixty minutes — applied to a body that is changing. Clinical details are confirmed with Mitch; this page is a door, not a protocol.",
     ],
     faq: [
-      { q: "Do you prescribe in pregnancy?", a: "Prescribing is available. What is appropriate is a case-by-case clinical decision, not a website promise." },
+      { q: "Do you prescribe in pregnancy?", a: "Prescribing will be available when perinatal care opens in May 2027. What is appropriate is a case-by-case clinical decision, not a website promise." },
     ],
     citations: [
       { label: "NIMH — perinatal depression", href: "https://www.nimh.nih.gov/health/publications/perinatal-depression" },
@@ -82,10 +82,10 @@ export const offerings: ClinicalEntry[] = [
     slug: "emdr",
     title: "EMDR",
     answer:
-      "Eye Movement Desensitization and Reprocessing is one way of working with traumatic memory. It is offered as a service lane, not as a religion. Whether it is the right instrument is decided after an evaluation.",
+      "Eye Movement Desensitization and Reprocessing is one way of working with traumatic memory. It will be offered as a service lane beginning September 2027, not as a religion. Whether it is the right instrument is decided after an evaluation.",
     lede: "A method, when the case asks for it.",
     body: [
-      "Trauma here also includes occupational and cultural reintegration. EMDR sits beside talking, genomic clues, and medication — never instead of a careful hour.",
+      "Trauma here also includes occupational and cultural reintegration. EMDR will sit beside talking, genomic clues, and medication — never instead of a careful hour.",
     ],
     faq: [
       { q: "Is every trauma case EMDR?", a: "No. The method follows the person." },
@@ -104,7 +104,7 @@ export const offerings: ClinicalEntry[] = [
       "Aging nervous systems still deserve sixty minutes. Mood, cognition, sleep, polypharmacy, and the dignity of a job, a home, and a friend remain the measure. Care is careful with medicines and honest about what function looks like.",
     lede: "Function in later life, not only symptom lists.",
     body: [
-      "This lane is part of the same practice. Complex medical lists and family systems are expected. Telehealth in Washington is available when travel is the barrier.",
+      "This lane is part of the same practice. Complex medical lists and family systems are expected. Telehealth in Washington and Idaho is available when travel is the barrier.",
     ],
     faq: [
       { q: "Do you only see older adults in person?", a: "Telehealth is available for patients in Washington. In-person plans follow the address on Contact." },
@@ -121,3 +121,10 @@ export const offerings: ClinicalEntry[] = [
 export function getOffering(slug: string) {
   return offerings.find((item) => item.slug === slug);
 }
+
+/** Services that are not offered yet. Value is the opening month (YYYY-MM). */
+export const opensOn: Record<string, string> = {
+  mat: "2027-01",
+  perinatal: "2027-05",
+  emdr: "2027-09",
+};

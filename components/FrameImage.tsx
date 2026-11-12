@@ -16,10 +16,10 @@ export function FrameImage({
   imageClassName,
   priority = false,
   sizes = "100vw",
-  scrim = false,
   share = false,
-  drift = false,
   parallax = false,
+  position,
+  quality,
 }: {
   src: string;
   alt: string;
@@ -27,17 +27,16 @@ export function FrameImage({
   imageClassName?: string;
   priority?: boolean;
   sizes?: string;
-  scrim?: boolean;
   share?: boolean;
-  drift?: boolean;
   parallax?: boolean;
+  position?: string;
+  quality?: 75 | 92;
 }) {
   const frame = (
     <div
       className={cn(
         "media-frame relative h-full w-full overflow-hidden bg-pine-deep",
-        drift && "is-drift",
-        parallax && !drift && "is-parallax",
+        parallax && "is-parallax",
         className,
       )}
     >
@@ -46,16 +45,13 @@ export function FrameImage({
         alt={alt}
         fill
         priority={priority}
+        quality={quality}
         sizes={sizes}
         className={cn("object-cover", imageClassName)}
-        style={photoPosition[src] ? { objectPosition: photoPosition[src] } : undefined}
+        style={
+          position || photoPosition[src] ? { objectPosition: position ?? photoPosition[src] } : undefined
+        }
       />
-      {scrim ? (
-        <div
-          className="pointer-events-none absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-pine-deep/60 to-transparent"
-          aria-hidden
-        />
-      ) : null}
     </div>
   );
 
